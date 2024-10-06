@@ -151,3 +151,16 @@ img{
 	font-size: 18px;
 }
 /*Fin de Menù lateral*/
+/*mapa*/
+#mapa {
+	width: 100%;
+    max-width: 600px;
+    height: 400px; 
+    margin: 300px 0 0 50px;
+    overflow: hidden;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none; 
+}
