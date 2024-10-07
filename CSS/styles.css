@@ -227,7 +227,6 @@ iframe {
 }
 /*Footer*/
 footer{
-	display: inline-flex;
 	text-align: center;
 	font-size: 1.2rem;
 	background: linear-gradient(190deg,#D1DCD5,  #79F0AC,#54E9AD, #D1DCD5);
