@@ -1,5 +1,6 @@
 :root{
   --fondo: #E7EBE8;
+  --ubiacion: #B7D6B7;
 }
 *{
    
@@ -156,8 +157,9 @@ img{
 	width: 100%;
     max-width: 600px;
     height: 400px; 
-    margin: 300px 0 0 50px;
+    /*margin: 300px 0 0 50px;*/
     overflow: hidden;
+	margin: 0 auto;
 }
 iframe {
     width: 100%;
@@ -171,4 +173,200 @@ iframe {
 	height: 200px;
 	margin: 150px 0 0 25px;
    }
+}
+/*Ubicacion*/
+.ubicacion{
+	background-color:var(--ubiacion);
+	margin-top: 120px;
+	padding: 50px 0;
+
+	
+}
+.titulo{
+	font-family: "Protest Strike", sans-serif;
+	color: #1c1c1c;
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 20px;
+}
+/*Acerca de*/
+.text1{
+	color: #1c1c1c;
+	text-align: left;
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+	float: left;
+	width: 50%;
+}
+.imagen{
+	width: 300px; 
+    max-width: 50%;
+    height: 300px; 
+
+}
+.AcercaDe{
+	display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+	height: 350px;
+    flex-wrap: wrap; 
+}
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .texto {
+        margin-right: 0; 
+        text-align: center; 
+    }
+    .imagen {
+        max-width: 80%; 
+        margin-top: 20px;
+    }
+}
+/*Footer*/
+footer{
+	display: inline-flex;
+	text-align: center;
+	font-size: 1.2rem;
+	background: linear-gradient(190deg,#D1DCD5,  #79F0AC,#54E9AD, #D1DCD5);
+}
+
+
+/*Dulces*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.Dulces {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+
+}
+
+.tarjetas {
+	display: flex;
+	align-items: center;
+	width: 300px;
+	height: 380px;
+	background-color: #fff;
+	box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.tarjetas:hover {
+	width: 600px;
+
+}
+
+.tarjetas
+.imgTarjetas {
+	position: relative;
+	min-width: 300px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+}
+
+.tarjetas:hover
+.imgTarjetas {
+	transform: rotate(-35deg);
+}
+
+.tarjetas .imgTarjetas img {
+	width: 85%;
+	height: auto; 
+    object-fit: contain; 
+}
+
+.tarjetas .detalles {
+	position: relative;
+	min-height: 300px;
+	background: #4ba9e9;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	color: #fff;
+}
+
+.tarjetas .detalles::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 10px solid transparent;
+	border-top: 10px solid transparent;
+	border-left: 10px solid #fff;
+}
+
+.tarjetas .detalles .titulo small {
+	font-weight: 200;
+	font-size: 0.8em;
+
+}
+
+.tarjetas .detalles h4 {
+	font-size: 0.9em;
+}
+
+.tarjetas .detalles .descripcion .descripcion_Dulces {
+	font-size: 0.8em;
+	font-weight: 200;
+}
+
+.tarjetas .detalles .tam ul {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.tarjetas .detalles .tam ul li {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.8em;
+	border: solid 1px #fff;
+	padding: 0.6em;
+}
+
+.tarjetas .detalles .tam ul li:hover {
+	background-color: #fff;
+	color: #4ba9e9;
+}
+
+.tarjetas .detalles .comprar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.tarjetas .detalles .comprar .precio {
+	font-size: 1.6em;
+
+}
+
+.tarjetas .detalles .comprar .btn {
+	background-color: #fff;
+	padding: 0.5em 0.8em;
+	text-transform: uppercase;
+}
+
+.tarjetas .detalles .comprar .btn {
+	text-decoration: none;
+	color: #4ba9e9;
 }
