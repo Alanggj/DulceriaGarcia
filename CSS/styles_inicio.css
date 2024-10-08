@@ -1,0 +1,26 @@
+:root{
+    --fondo: #E7EBE8;
+    --ubiacion: #B7D6B7; 
+    --rosa:#f81c9c;
+  }
+
+.contenedor-vendimia {
+    display: grid;
+    
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 2rem; 
+    padding: 2rem;
+    margin: auto;
+    width: 100vw;
+}
+
+.productos {
+    display: contents; 
+}
+
+.producto {
+    background-color: #e25311d1;
+    padding: 5rem;
+    border: 1px solid var(--rosa);
+    text-align: center;
+}
