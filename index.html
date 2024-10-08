@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_header.css">
+
     <!--Funtes_Utilizadas-->
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
@@ -19,11 +21,21 @@
     <header class="header">
         <div class="container">
             <div class="btn-menu">
-                <label for="btn-menu">☰</label>
+                <label  for="btn-menu">☰</label>
             </div>
             <div class="logo">
-                <h2>DULCERIA <a href="index.html"><img src="img/logo.png"></a> GARCIA</h2>
-
+                <h2>DULCERÍA <a href="index.html"><img src="img/logo.png"></a> GARCÍA</h2>
+            </div>
+            <div class="carrito">
+                <a href="comprar.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                      </svg>
+                </a>
             </div>
         </div>
     </header>
@@ -33,13 +45,20 @@
     <div class="container-menu">
         <div class="cont-menu">
             <nav>
-                <a href="index_dulces.html">DULCES</a>
-                <a href="#">DULCES TIPICOS</a>
-                <a href="#">PIÑATAS</a>
-                <a href="#">ACCESORIOS DE FIESTA</a>
+                <a href="#">INICIO</a>
+                <a href="#">BOTANAS</a>
                 <a href="#">DESECHABLE</a>
+                <a href="#">FIESTAS</a>
+                <a href="index_dulces.html">DULCES</a>
+                <a href="#">ACERCA DE...</a>
             </nav>
-            <label for="btn-menu">✖️</label>
+            <label class="tachita" for="btn-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="32" height="32" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                  </svg>
+            </label>
         </div>
     </div>
     <section class="ubicacion">
