@@ -15,7 +15,7 @@
     
 }
 
-.container .btn-menu, .logo{
+.container .btn-menu, .logito{
 	float: left;
 	line-height:100px;
 }
@@ -32,7 +32,7 @@
     height: 100px;
 }
 
-.logo h2{
+.logito h2{
     font-family: "Lilita One", sans-serif;
 	color: #fff;
 	font-weight: 400;
@@ -42,7 +42,7 @@
 }
 
 @media (max-width: 768px) {
-    .logo h2 {
+    .logito h2 {
         font-size: 1.8rem; 
     }
     
@@ -141,5 +141,67 @@ img{
 	cursor: pointer;
 	font-size: 18px;
 }
-
 /*Fin de Menù lateral*/
+
+/*FOOTER*/
+.contenedor_footer {
+	background: linear-gradient(190deg, #FFC1E3, #FF8FB1, #FF6EA1, #F94D9C);
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 2rem 3rem;
+	flex-wrap: wrap;
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 30%;
+	
+}
+
+.logo h2 {
+	margin-bottom: 1rem;
+	font-size: 1.7rem;
+}
+
+.logo p {
+	margin: 0.2rem 0;
+	font-size: 1.3rem;
+}
+
+.logo img {
+	width: 125px;
+	height: auto;
+}
+
+.derechos {
+	text-align: center;
+	font-size: 2rem;
+	width: 40%;
+}
+
+.derechos p {
+	margin: 0.2rem 0;
+}
+
+
+.redes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+}
+
+.redes h2 {
+	margin-bottom: 1rem;
+	font-size: 1.7rem;
+}
+
+.redes svg {
+	margin: 0.5rem;
+	width: 40px;
+	height: 40px;
+}
+/* FIN DEL FOOTER */
