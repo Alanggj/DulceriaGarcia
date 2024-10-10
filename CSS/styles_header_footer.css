@@ -31,6 +31,25 @@
     margin-top: 1.2rem;
     height: 100px;
 }
+@media (max-width: 768px ) {
+	.container .carrito {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		margin-top: 0;
+		width: auto;
+		height: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transform: scale(0.5);
+	}
+	.container .carrito img {
+		width: 25px;
+		height: 25px;
+	}
+   
+}
 
 .logito h2{
     font-family: "Lilita One", sans-serif;
@@ -145,63 +164,104 @@ img{
 
 /*FOOTER*/
 .contenedor_footer {
-	background: linear-gradient(190deg, #FFC1E3, #FF8FB1, #FF6EA1, #F94D9C);
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-	padding: 2rem 3rem;
-	flex-wrap: wrap;
+    background: linear-gradient(190deg, #FFC1E3, #FF8FB1, #FF6EA1, #F94D9C);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem 3rem;
+    flex-wrap: wrap;
+    position: relative;
 }
 
+/* Ajuste del logo y dirección */
 .logo {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	width: 30%;
-	
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%; /* Ocupará un 40% del footer */
 }
 
 .logo h2 {
-	margin-bottom: 1rem;
-	font-size: 1.7rem;
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
 }
 
 .logo p {
-	margin: 0.2rem 0;
-	font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 .logo img {
-	width: 125px;
-	height: auto;
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
+/* Ajuste de los derechos */
 .derechos {
-	text-align: center;
-	font-size: 2rem;
-	width: 40%;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 40%; /* Ocupará un 40% del footer */
+    font-weight: bold;
 }
 
 .derechos p {
-	margin: 0.2rem 0;
+    margin: 0.5rem 0;
 }
 
-
+/* Redes sociales fijas a la derecha */
 .redes {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 30%;
-}
-
-.redes h2 {
-	margin-bottom: 1rem;
-	font-size: 1.7rem;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .redes svg {
-	margin: 0.5rem;
-	width: 40px;
-	height: 40px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .contenedor_footer {
+        flex-direction: column;
+        align-items: center; /* Centrar todos los elementos */
+        justify-content: center;
+        padding: 2rem 1rem;
+        text-align: center; /* Centrar el texto */
+    }
+
+    .logo, .derechos {
+        width: 100%;
+        text-align: center; /* Asegurarse de que todo esté centrado */
+		align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .logo img {
+        width: 120px; /* Tamaño más pequeño en pantallas móviles */
+
+    }
+
+    .derechos {
+        font-size: 1.3rem;
+
+    }
+
+    .redes {
+        right: 5px;
+        bottom: 10px;
+        gap: 5px;
+    }
+
+    .redes svg {
+        width: 30px;
+        height: 30px;
+    }
 }
 /* FIN DEL FOOTER */

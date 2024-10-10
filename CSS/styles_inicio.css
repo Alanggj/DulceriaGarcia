@@ -1,14 +1,14 @@
-:root{
+:root {
     --fondo: #E7EBE8;
-    --ubiacion: #B7D6B7; 
-    --rosa:#f81c9c;
-    --blanco:#ffffff;
-  }
+    --ubiacion: #B7D6B7;
+    --rosa: #f81c9c;
+    --blanco: #ffffff;
+}
 
 .contenedor-vendimia {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 2rem; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
     padding: 2rem;
     margin: auto;
     width: 90vw;
@@ -16,7 +16,7 @@
 }
 
 .productos {
-    display: contents; 
+    display: contents;
 }
 
 .producto {
@@ -25,7 +25,7 @@
     border: 3px solid var(--rosa);
     text-align: center;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .producto img {
@@ -36,7 +36,7 @@
 }
 
 .producto img:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
 
 .producto h1 {
@@ -45,68 +45,107 @@
 }
 
 .productos a {
-    text-decoration: none; /*ESTO QUITA EL SUBRAYADO DE UN ENLACE*/
-    color: var(--rosa); 
+    text-decoration: none;
+    /*ESTO QUITA EL SUBRAYADO DE UN ENLACE*/
+    color: var(--rosa);
+}
+
+@media (max-width: 768px) {
+    .contenedor-vendimia {
+        grid-template-columns: 1fr; 
+    }
+
+    .producto h1 {
+        font-size: 1.2rem; 
+    }
+    .producto img {
+        max-width: 100%;
+    }
+    .logito h2 {
+        font-size: 1.5rem; 
+    }
+
+    .titulo {
+        margin-bottom: 100px;
+    }
 }
 
 /* MAPA */
 #mapa {
-	width: 100%;
-    max-width: 600px;
-    height: 400px; 
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
     border: 4px solid var(--rosa);
-    padding: 10px; 
+    padding: 10px;
     overflow: hidden;
-	margin: 0 auto;
+    margin: 0 auto;
 }
+
 iframe {
     width: 100%;
     height: 100%;
-    border: none; 
+    border: none;
 }
 
-@media (max-width: 769px) {
-   #mapa {
-	max-width: 200px;
-	height: 200px;
-	margin: 150px 0 0 25px;
-   }
+@media (max-width: 768px) {
+    #mapa {
+        align-items: center;
+        justify-content: center;
+        max-width: 350px;
+        height: 450px;
+        margin: 50px auto 0 auto;
+    }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #mapa {
+        max-width: 600px;
+        height: 400px; 
+        margin: 50px auto; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px auto 0 auto;
+    }
+
+}
+
 
 /*Ubicacion*/
-.ubicacion{
-	margin-top: 0;
-	padding: 50px 0;
+.ubicacion {
+    margin-top: 0;
+    padding: 50px 0;
 }
-.titulo{
-	font-family: "Protest Strike", sans-serif;
-	color: #1c1c1c;
-	text-align: center;
-	font-size: 3rem;
-	margin-bottom: 20px;
+
+.titulo {
+    font-family: "Protest Strike", sans-serif;
+    color: #1c1c1c;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 /*BOTÓN*/
 .boton-r {
     display: flex;
-    justify-content: center; 
-    margin: 20px 0; 
+    justify-content: center;
+    margin: 20px 0;
     width: 100%;
 }
 
 .boton-ubi {
-    background-color: var(--rosa); 
+    background-color: var(--rosa);
     color: #000000;
-    border: none; 
-    padding: 20px 40px; 
-    font-size: 16px; 
-    cursor: pointer; 
-    border-radius: 5px; 
-    transition: background-color 0.3s ease; 
-    display: inline-block; 
+    border: none;
+    padding: 20px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
 }
 
 .boton-ubi:hover {
-    background-color: #f73a7a; 
+    background-color: #f73a7a;
     color: var(--blanco);
 }
