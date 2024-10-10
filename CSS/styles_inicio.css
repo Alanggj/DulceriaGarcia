@@ -100,7 +100,7 @@ iframe {
 @media (min-width: 768px) and (max-width: 1024px) {
     #mapa {
         max-width: 600px;
-        height: 400px; 
+        height: 500px; 
         margin: 50px auto; 
         display: flex;
         align-items: center;
