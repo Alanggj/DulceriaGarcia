@@ -54,9 +54,13 @@
     align-items: center;
 }
 
-
+.pie-carrito .boton-carrito{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
 .boton-checkout {
-    
+
     background-color: #f635b6; 
     color: white;
     border: none;
