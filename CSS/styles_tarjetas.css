@@ -36,8 +36,8 @@
 }
 
 .contenedor .contenedor_productos .productos img {
-   width: 100%; 
-   height: 80%;
+   width: 400px; 
+   height: 400px;
    transition: transform 0.3s;
 }
 
