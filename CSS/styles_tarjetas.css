@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+* {
+   font-family: 'Nunito', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   transition: all .2s linear;
+   text-transform: capitalize;
+}
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body {
+   background: #eee;
+}
+
+.contenedor {
+   max-width: 500px;
+   margin: 0 auto;
+   border: 1rem solid #f81c9c; /* Borde rosa alrededor del contenedor */
+   padding: 1rem; /* Espacio interno para el contenedor */
+}
+
+.contenedor .title {
+   font-size: 3.5rem;
+   color: #444;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.contenedor .contenedor_productos {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 1rem;
+}
+
+.contenedor .contenedor_productos .productos {
+   text-align: center;
+   padding: 2rem;
+   background: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   outline: 2rem solid #f81c9c;
+   outline-offset: 0;
+   cursor: pointer;
+}
+
+.contenedor .contenedor_productos .productos:hover {
+   outline: 2rem solid #f81c9c;
+   outline-offset: 0;
+}
+
+.contenedor .contenedor_productos .productos img {
+   width: 100%; 
+   height: 80%;
+   transition: transform 0.3s;
+}
+
+.contenedor .contenedor_productos .productos:hover img {
+   transform: scale(.7);
+   align-items: center;
+}
+
+.contenedor .contenedor_productos .productos h3 {
+   padding: .5rem 0;
+   font-size: 2rem;
+   color: #444;
+}
+
+.contenedor .contenedor_productos .productos:hover h3 {
+   color: #27ae60;
+}
+
+.contenedor .contenedor_productos .productos .precio {
+   font-size: 2rem;
+   color: #444;
+}
+
+.products-preview {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 1000; 
+    justify-content: center;
+    align-items: center;
+}
+
+.products-preview .preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    background: white;
+    padding: 20px;
+    max-width: 400px;
+    max-height: 90%;
+    overflow-y: auto;
+    position: relative;
+}
+
+
+.products-preview .preview.active {
+   display: block;
+}
+
+.products-preview .preview img {
+    width: 100px;         
+    height: 100px;       
+    object-fit: cover;    
+    display: block;
+    margin: 0 auto;      
+}
+
+.products-preview .preview .fa-times {
+   position: absolute;
+   top: 1rem;
+   right: 1.5rem;
+   cursor: pointer;
+   color: #444;
+   font-size: 4rem;
+   transition: transform 0.2s ease;
+}
+
+.products-preview .preview .fa-times:hover {
+   transform: rotate(90deg);
+}
+
+.products-preview .preview h3 {
+    text-align: center; 
+    margin: 15px 0;
+}
+
+.products-preview .preview p {
+    text-align: center; 
+}
+
+.products-preview .preview .precio {
+   padding: 1rem 0;
+   font-size: 2.5rem;
+   color: #27ae60;
+   align-items: center;
+   
+}
+
+.products-preview .preview .botones {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+}
+
+.products-preview .preview .botones a {
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.products-preview .preview .botones a.carro {
+   background: #444;
+   color: #fff;
+}
+
+.products-preview .preview .botones a.carro:hover {
+   background: #111;
+}
+
+.products-preview .preview .botones a.comprar:hover {
+   background: #444;
+   color: #fff;
+}
+
+.close-preview {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    cursor: pointer; 
+    color: #000; 
+    font-size: 24px;
+}
+
+/* Responsividad */
+@media (max-width: 991px) {
+   html {
+      font-size: 55%;
+   }
+}
+
+@media (max-width: 768px) {
+   .products-preview .preview img {
+      height: 25rem;
+   }
+}
+
+@media (max-width: 450px) {
+   html {
+      font-size: 50%;
+   }
+}
