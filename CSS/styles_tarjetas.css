@@ -103,6 +103,7 @@ h1{
    cursor: pointer;
    color:#444;
    font-size: 4rem;
+   transition: transform 0.3s ease; 
 }
 
 .products-preview .preview .fa-times:hover{
@@ -115,15 +116,6 @@ h1{
    font-size: 2.5rem;
 }
 
-.products-preview .preview .stars{
-   padding:1rem 0;
-   font-size: 1.7rem;
-}
-
-
-.products-preview .preview .stars span{
-   color:#999;
-}
 
 .products-preview .preview p{
    line-height: 1.5;
