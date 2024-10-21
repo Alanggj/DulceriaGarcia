@@ -10,7 +10,7 @@ h1{
 }
 .contenedor_producto .title{
    font-size: 3.5rem;
-   color:#444;
+   color:#830d96;
    margin-bottom: 3rem;
    text-transform: uppercase;
    text-align: center;
@@ -28,14 +28,14 @@ h1{
    text-align: center;
    padding:3rem 2rem;
    background: #fff;
-   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-   outline: .1rem solid #ccc;
+   box-shadow: 0 .5rem 0.3rem #f81c9c;
+   border: 4px solid #f81c9c; 
+   outline: none; 
    outline-offset: -1.5rem;
    cursor: pointer;
 }
 
 .contenedor_producto .productos_d .product:hover{
-   outline: .2rem solid #222;
    outline-offset: 0;
 }
 
@@ -54,7 +54,7 @@ h1{
 .contenedor_producto .productos_d .product h3{
    padding:.5rem 0;
    font-size: 2rem;
-   color:#444;
+   color:#444444;
 }
 
 .contenedor_producto .productos_d .product:hover h3{
@@ -120,9 +120,6 @@ h1{
    font-size: 1.7rem;
 }
 
-.products-preview .preview .stars i{
-   color:#27ae60;
-}
 
 .products-preview .preview .stars span{
    color:#999;
@@ -164,11 +161,11 @@ h1{
 
 .products-preview .preview .botones a.carro:hover{
    background: #ff4d94;
-   color: #222;
+   color: #000000;
 }
 
 .products-preview .preview .botones a.comprar:hover{
-   background: #444;
+   background: #000000;
    color:#fff;
 }
 
