@@ -47,7 +47,7 @@
 /* Estilo del pie del carrito */
 .pie-carrito {
     padding: 1rem;
-    border-top: 1px solid #ccc;
+    border:  5px solid #f81c9c;
     justify-content: center;
     display: block;
     align-content: center;
@@ -82,3 +82,4 @@
     color: #ff0295;
     text-align: center;
 }   
+
