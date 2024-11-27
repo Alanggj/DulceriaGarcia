@@ -257,57 +257,60 @@ h1,h2,h3 {
     color: var(--primario);
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+.enviar-opciones {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
 }
 
-.dropdown-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
+/* Estilo para el dropdown */
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 8px;
     border-radius: 5px;
+}
+
+.dropdown-content.mostrar {
+    display: block;
+}
+
+.dropdown-option {
+    display: block;
+    background: none;
+    border: none;
+    padding: 8px;
+    text-align: left;
     cursor: pointer;
 }
 
-.dropdown-button:hover {
-    background-color: #0056b3;
+.dropdown-option:hover {
+    background-color: #ddd;
 }
 
-/* Contenedor para los botones */
-.button-container {
-    display: flex; /* Coloca los elementos en una fila */
-    gap: 10px; /* Espacio entre los botones */
-}
-
-.dropdown-content {
-    display: none; /* Oculta el contenido inicialmente */
-    position: absolute;
-    background-color: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    min-width: 150px;
+/* Botón principal */
+.dropdown-button {
+    background-color: #f81c9c; /* Color rosa */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
     border-radius: 5px;
+    display: inline-block; /* Ajustable según necesidad */
+    position: relative; /* Para personalizar su ubicación */
 }
 
-.dropdown-content a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    padding: 10px 15px;
-    border-bottom: 1px solid #ddd;
+/* Botón al pasar el mouse */
+.dropdown-button:hover {
+    background-color: #ff85c4; /* Rosa más claro */
 }
 
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block; /* Muestra el contenido al pasar el mouse */
-}
-
-.dropdown-content a:last-child {
-    border-bottom: none; /* Quita el borde inferior del último elemento */
+.dropdown-button {
+    margin-top: 5px;
+    top: 20px; /* Ajusta el valor para moverlo verticalmente */
+    left: 15px; /* Ajusta el valor para moverlo horizontalmente */
 }

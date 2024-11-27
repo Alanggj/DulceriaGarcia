@@ -118,53 +118,74 @@
 
     <!-- <main> -->
         <section>
-            <!-- <h3>Contacto</h3> -->
-            <form class="formulario">
+            <form class="formulario" id="formulario">
                 <fieldset>
                     <legend>Para cotizar tu piñata llena los datos</legend>
-    
                     <div class="contenedor-campos">
                         <div class="campo">
-                        <label>Nombre del cliente</label>
-                        <input class="input-text" type="text" placeholder="Ingresa tu nombre">
+                            <label>Nombre del cliente</label>
+                            <input class="input-text" type="text" placeholder="Ingresa tu nombre">
                         </div>
-                    
-    
-                        <div div class="campo">
-                            <label>Telefono</label>
-                            <input class="input-text" type="text" placeholder="Ingresa tu telefono">
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input class="input-text" type="text" placeholder="Ingresa tu teléfono">
                         </div>
-    
-                        <div div class="campo">
+                        <div class="campo">
                             <label>Email</label>
-                            <input class="input-text" type="text" placeholder="Ingresa tu email">
+                            <input class="input-text" type="email" placeholder="Ingresa tu email">
                         </div>
-    
-                        <div div class="campo">
-                            <label>Especificaciones de como quiere su piñata</label>
+                        <div class="campo">
+                            <label>Especificaciones de cómo quiere su piñata</label>
                             <textarea class="input-text"></textarea>
                         </div>
                     </div>
-                    <div class="enviar">
-                        <input class="boton w-sm-100" type="submit" value="Enviar">
-                    </div>
-
-                    <body2>
+    
+                    <div class="enviar-opciones">
+                        <!-- Botón Enviar -->
+                        <div class="enviar">
+                            <input class="boton w-sm-100" type="submit" value="Enviar">
+                        </div>
+    
+                        <!-- Dropdown Opciones -->
                         <div class="dropdown">
-                            <button class="dropdown-button">Opciones</button>
+                            <button type="button" class="dropdown-button">Opciones</button>
                             <div class="dropdown-content">
-                                <a href="#opcion1">Opción 1</a>
-                                <a href="#opcion2">Opción 2</a>
-                                <a href="#opcion3">Opción 3</a>
+                                <button class="dropdown-option" type="button">Piñata $90</button>
+                                <button class="dropdown-option" type="button">Piñata $120</button>
+                                <button class="dropdown-option" type="button">Piñata $200</button>
                             </div>
                         </div>
-                    </body2>    
-                    <script src="script.js"></script>
-                    
+                    </div>
                 </fieldset>
             </form>
         </section>
-    <!-- </main> -->
+    
+        <!-- Scripts -->
+        <script>
+            // Prevención del envío de formulario
+            const formulario = document.getElementById('formulario');
+            formulario.addEventListener('submit', (e) => {
+                e.preventDefault(); // Evitar envío real del formulario
+                alert('Formulario enviado correctamente (simulado)');
+            });
+    
+            // Dropdown funcionalidad
+            const dropdownButton = document.querySelector('.dropdown-button');
+            const dropdownContent = document.querySelector('.dropdown-content');
+            const opciones = document.querySelectorAll('.dropdown-option');
+    
+            dropdownButton.addEventListener('click', () => {
+                dropdownContent.classList.toggle('mostrar'); // Muestra/oculta opciones
+            });
+    
+            opciones.forEach(opcion => {
+                opcion.addEventListener('click', (e) => {
+                    alert(`Has seleccionado: ${e.target.textContent}`);
+                });
+            });
+
+
+        </script>
 
     <footer class="contenedor_footer">
         <div class="logo">
@@ -202,31 +223,8 @@
             </a>
         </div>
     </footer>
-    <script>
-        const cartButton = document.querySelector('.carrito a');
-        const cart = document.getElementById('carrito-compra');
-        const closeCart = document.getElementById('cerrar-carrito');
-
-        cartButton.addEventListener('click', (e) => {
-            e.preventDefault();
-            cart.classList.toggle('mostrar');
-        });
-
-        closeCart.addEventListener('click', () => {
-            cart.classList.remove('mostrar');
-        });
-
-        window.addEventListener('click', (e) => {
-            if (!cart.contains(e.target) && !cartButton.contains(e.target)) {
-                cart.classList.remove('mostrar');
-            }
-        });
-    </script>
 
 
 </body>
-
-
-
 
 </html>
