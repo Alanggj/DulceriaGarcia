@@ -26,7 +26,7 @@ html {
 .servicios,
 .navegacion-principal,
 .formulario{
-    scroll-snap-align: center;
+   /* scroll-snap-align: center;*/
     scroll-snap-stop: always;
 }
 
@@ -39,6 +39,7 @@ body {
     font-family: 'Krub', sans-serif;
     font-weight: 400;
     font-style: normal;
+    padding:0;
 
 }
 
@@ -48,6 +49,7 @@ body2{
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 0;
 }
 
 h1 {
