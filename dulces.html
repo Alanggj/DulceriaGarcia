@@ -17,8 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="js/productos.js" defer></script>
+    <script src="js/busqueda.js" defer></script>
     <script src="js/Filtro.js" defer></script>
-    
+
 </head>
 
 <body>
@@ -32,8 +33,17 @@
             <div class="logito">
                 <h2>DULCERÍA <a href="index.html"><img src="img/logo.png"></a> GARCÍA</h2>
             </div>
+        </div>
+        <div class="container2">
+            <div class="busqueda">
+                <div class="search">
+                    <input type="text" id="find" placeholder="Buscar en Tienda" style="width: 0;" onkeyup="search()" />
+                    <i class="fas fa-search" id="search-icon" onclick="toggleSearch()"></i>
+                </div>
+            </div>
             <div class="carrito">
                 <a href="comprar.html">
+
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart"
                         width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -46,6 +56,7 @@
                 </a>
             </div>
         </div>
+
     </header>
     <h1>DULCES</h1>
     <div class="capa"></div>
@@ -92,7 +103,7 @@
             <div class="product" data-name="p-1" data-category="categoria1">
                 <img src="img/ImgDulces/Chocolates/BinchiOriginal.jpeg" alt="">
                 <h3>Bianchi Chocolate Original</h3>
-                <h3> 10 Piezas</h3> 
+                <h3> 10 Piezas</h3>
                 <div class="price">$80.00</div>
             </div>
 
@@ -164,7 +175,7 @@
                 <div class="price">$51.00</div>
             </div>
 
-            <div class="product" data-name="p-12"data-category="categoria1">
+            <div class="product" data-name="p-12" data-category="categoria1">
                 <img src="img/ImgDulces/Chocolates/MIniCoconugs.jpeg" alt="">
                 <h3>Mini CocoNugs</h3>
                 <h3>24 Piezas</h3>
@@ -188,7 +199,7 @@
             <div class="product" data-name="p-15" data-category="categoria1">
                 <img src="img/ImgDulces/Chocolates/ChocolatePremium.jpeg" alt="">
                 <h3>Chocolate Premium</h3>
-                <h3>16 Piezas</h3> 
+                <h3>16 Piezas</h3>
                 <div class="price">$100.00</div>
             </div>
 
@@ -224,7 +235,7 @@
                 <h3>Mini Mamut</h3>
                 <h3>28 Piezas</h3>
                 <div class="price">$50.00</div>
-            </div>    
+            </div>
 
 
             <div class="product" data-name="p-21" data-category="categoria1">
@@ -274,7 +285,7 @@
                 <h3>20 Piezas</h3>
                 <div class="price">$37.00</div>
             </div>
- 
+
             <div class="product" data-name="p-28" data-category="categoria1">
                 <img src="img/ImgDulces/Chocolates/MIniCarlosV.jpeg" alt="">
                 <h3>Mini Carlos V</h3>
@@ -294,424 +305,424 @@
                 <h3>Mini Nikolo</h3>
                 <h3>20 Piezas</h3>
                 <div class="price">$36.00</div>
-            </div>  
+            </div>
             <div class="product" data-name="p-31" data-category="categoria1">
                 <img src="img/ImgDulces/Chocolates/MIniCrunch.jpeg" alt="">
                 <h3>Mini Crunch</h3>
                 <h3>20 Piezas</h3>
                 <div class="price">$48.00</div>
-            </div>  
+            </div>
             <!--Tamarindo y Chile-->
-        <div class="product" data-name="p-32" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/Pulparindo.jpeg" alt="">
-            <h3>Pulparindo</h3>
-            <h3>20 Piezas</h3>
-            <div class="price">$44.00</div>
-        </div> 
-        <div class="product" data-name="p-33" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/MiniPulparindo.png" alt="">
-            <h3>MiniPulparindo</h3>
-            <h3>24 Piezas</h3>
-            <div class="price">$40.00</div>
-        </div>   
-        <div class="product" data-name="p-34" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/PulparindoGigante.jpeg" alt="">
-            <h3>Pulparindo Gigante</h3>
-            <h3>16 Piezas</h3>
-            <div class="price">$67.00</div>
-        </div> 
-        <div class="product" data-name="p-35" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/GomiKingMango.jpeg" alt="">
-            <h3>Gomi King Mango</h3>
-            <h3>24 Piezas</h3>
-            <div class="price">$45.00</div>
-        </div> 
-        <div class="product" data-name="p-36" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/FireKidsSandía.jpeg" alt="">
-            <h3>Fire Kids Sandía</h3>
-            <h3>24 Piezas</h3>
-            <div class="price">$45.00</div>
-        </div> 
-        <div class="product" data-name="p-37" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/MegaHuevon.jpeg" alt="">
-            <h3>Mega Huevon/h3>
-            <h3>30 Piezas</h3>
-            <div class="price">$47.00</div>
-        </div> 
-        <div class="product" data-name="p-38" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/PikoOllitaMediana.jpg" alt="">
-            <h3>Piko Ollita Mediana</h3>
-            <h3>50 Piezas</h3>
-            <div class="price">$26.00</div>
-        </div> 
-        <div class="product" data-name="p-39" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/PikoOllitasChica.jpg" alt="">
-            <h3>Piko Ollita Chica</h3>
-            <h3>50 Piezas</h3>
-            <div class="price">$20.00</div>
-        </div> 
-        <div class="product" data-name="p-40" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/PikoOllitaGrande.jpeg" alt="">
-            <h3>Poko Ollita Grande</h3>
-            <h3>36 Piezas</h3>
-            <div class="price">$34.00</div>
-        </div> 
-        <div class="product" data-name="p-41" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/VasoKarlaChico.jpg" alt="">
-            <h3>Vaso Karla Chico</h3>
-            <h3>24 Piezas</h3>
-            <div class="price">$104.00</div>
-        </div>    
-        <div class="product" data-name="p-42" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/TamaRocaPaleta.jpeg" alt="">
-            <h3>Tama-Roca Paleta</h3>
-            <h3>12 Piezas</h3>
-            <div class="price">$93.00</div>
-        </div> 
-        <div class="product" data-name="p-43" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/Tamborcitos.jpeg" alt="">
-            <h3>Tamborcitos</h3>
-            <h3>30 Piezas</h3>
-            <div class="price">$23.00</div>
-        </div> 
-        <div class="product" data-name="p-44" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/Tronquitos.jpeg" alt="">
-            <h3>Tronquitos</h3>
-            <h3>10 Piezas</h3>
-            <div class="price">$41.00</div>
-        </div> 
-        <div class="product" data-name="p-45" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/MiniPelon.jpeg" alt="">
-            <h3>MiniPelon</h3>
-            <h3>18 Piezas</h3>
-            <div class="price">$56.00</div>
-        </div> 
-        <div class="product" data-name="p-46" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/Dragonzitos.jpeg" alt="">
-            <h3>Dragonzitos</h3>
-            <h3>100 Piezas</h3>
-            <div class="price">$30.00</div>
-        </div>
-        <div class="product" data-name="p-47" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/TalismanColores.webp" alt="">
-            <h3>Talismanes Colores</h3>
-            <h3>20 Piezas</h3>
-            <div class="price">$17.00</div>
-        </div> 
-        <div class="product" data-name="p-48" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/TalismanRojo.webp" alt="">
-            <h3>Talismanes Rojos</h3>
-            <h3>20 Piezas</h3>
-            <div class="price">$17.00</div>
-        </div> 
-        <div class="product" data-name="p-49" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/Rellerindos.jpeg" alt="">
-            <h3>Rellerindos</h3>
-            <h3>65 Piezas</h3>
-            <div class="price">$80.00</div>
-        </div> 
-        <div class="product" data-name="p-50" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/ZumbaGoma.jpeg" alt="">
-            <h3>Zumba Goma</h3>
-            <h3>20 Piezas</h3>
-            <div class="price">$80.00</div>
-        </div> 
-        <div class="product" data-name="p-51" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/LucasPanzon.webp" alt="">
-            <h3>Lucas Panzón</h3>
-            <h3>10 Piezas</h3>
-            <div class="price">$85.00</div>
-        </div> 
-        <div class="product" data-name="p-52" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/LucasMuecas.webp" alt="">
-            <h3>Lucas Muecas</h3>
-            <h3>10 Piezas</h3>
-            <div class="price">$82.00</div>
-        </div> 
-        <div class="product" data-name="p-53" data-category="categoria2">
-            <img src="img/ImgDulces/Tamarindo/LucasGusano.jpeg" alt="">
-            <h3>Lucas Gusano</h3>
-            <h3>10 Piezas</h3>
-            <div class="price">$80.00</div>
-        </div> 
-        <!--Paletas-->
-        <div class="product" data-name="p-54" data-category="categoria3">
-            <img src="img/ImgDulces/Paletas/Cereza.jpeg" alt="">
-            <h3>Paleta Cereza</h3>
-            <h3>50 Piezas</h3>
-            <div class="price">$95.00</div>
-        </div> 
-        <div class="product" data-name="p-55" data-category="categoria3">
-            <img src="img/ImgDulces/Paletas/MiniCereza.jpeg" alt="">
-            <h3>Mini Paleta Cereza</h3>
-            <h3>50 Piezas</h3>
-            <div class="price">$65.00</div>
-        </div> 
-        <div class="product" data-name="p-56" data-category="categoria3">
-            <img src="img/ImgDulces/Paletas/MiniPaletasFrutita.jpg" alt="">
-            <h3>Mini Paletas Frutita</h3>
-            <h3>100 Piezas</h3>
-            <div class="price">$52.00</div>
-        </div> 
-        <div class="product" data-name="p-57" data-category="categoria3">
-            <img src="img/ImgDulces/Paletas/TutsiPop1.jpeg" alt="">
-            <h3>Tutsi Pop</h3>
-            <h3>24 Piezas</h3>
-            <div class="price">$95.00</div>
-        </div> 
-        <div class="product" data-name="p-58" data-category="categoria3">
-            <img src="img/ImgDulces/Paletas/EscobonBlue.jpeg" alt="">
-            <h3>Escobon Blue</h3>
-            <h3>40 Piezas</h3>
-            <div class="price">$44.00</div>
-        </div> 
-        <div class="product" data-name="p-59" data-category="categoria3">
-            <img src="img/ImgDulces/Paletas/Paleamor.jpeg" alt="">
-            <h3>Paleamor</h3>
-            <h3>40 Piezas</h3>
-            <div class="price">$44.00</div>
-        </div> 
-        <div class="product" data-name="p-60" data-category="categoria3">
-            <img src="img/ImgDulces/Paletas/MaraPiña.jpeg" alt="">
-            <h3>Mara Piña</h3>
-            <h3>40 Piezas</h3>
-            <div class="price">$44.00</div>
-        </div> 
-        <div class="product" data-name="p-61" data-category="categoria3">
-            <img src="img/ImgDulces/Paletas/MaraSandia.webp" alt="">
-            <h3>Mara Sandia</h3>
-            <h3>40 Piezas</h3>
-            <div class="price">$44.00</div>
-        </div> 
-        <div class="product" data-name="p-62" data-category="categoria3">
-            <img src="img/ImgDulces/Paletas/Molonkitos.jpeg" alt="">
-            <h3>Molonkitos</h3>
-            <h3>40 Piezas</h3>
-            <div class="price">$44.00</div>
-        </div> 
-        <div class="product" data-name="p-63" data-category="categoria3">
-            <img src="img/ImgDulces/Paletas/VeroMixChile.jpeg" alt="">
-            <h3>Vero Mix Chile</h3>
-            <h3>20 Piezas</h3>
-            <div class="price">$44.00</div>
-        </div> 
-        <div class="product" data-name="p-64" data-category="categoria3">
-            <img src="img/ImgDulces/Paletas/VeroMixDulce.jpeg" alt="">
-            <h3>Vero Mix Dulce</h3>
-            <h3>20 Piezas</h3>
-            <div class="price">$44.00</div>
-        </div> 
-        <div class="product" data-name="p-65" data-category="categoria3">
-            <img src="img/ImgDulces/Paletas/MaraMango.jpeg" alt="">
-            <h3>Mara Mango</h3>
-            <h3>40 Piezas</h3>
-            <div class="price">$44.00</div>
-        </div> 
-        <!--Dulces Cafe-->
-        <div class="product" data-name="p-66" data-category="categoria4">
-            <img src="img/ImgDulces/DulcesCafe/RicosBesos.jpeg" alt="">
-            <h3>Ricos Besos</h3>
-            <h3>100 Piezas</h3>
-            <div class="price">$67.00</div>
-        </div> 
-        <div class="product" data-name="p-67" data-category="categoria4">
-            <img src="img/ImgDulces/DulcesCafe/Natilla.jpeg" alt="">
-            <h3>Natilla</h3>
-            <h3>100 Piezas</h3>
-            <div class="price">$67.00</div>
-        </div> 
-        <div class="product" data-name="p-68" data-category="categoria4">
-            <img src="img/ImgDulces/DulcesCafe/Damy.jpeg" alt="">
-            <h3>Damy</h3>
-            <h3>100 Piezas</h3>
-            <div class="price">$67.00</div>
-        </div> 
-        <div class="product" data-name="p-69" data-category="categoria4">
-            <img src="img/ImgDulces/DulcesCafe/Tomy.jpeg" alt="">
-            <h3>Tomy</h3>
-            <h3>100 Piezas</h3>
-            <div class="price">$67.00</div>
-        </div> 
-        <div class="product" data-name="p-70" data-category="categoria4">
-            <img src="img/ImgDulces/DulcesCafe/Cachitos.jpeg" alt="">
-            <h3>Cachitos</h3>
-            <h3>100 Piezas</h3>
-            <div class="price">$67.00</div>
-        </div> 
-        <!--Chicles-->
-        <div class="product" data-name="p-71" data-category="categoria5">
-            <img src="img/ImgDulces/Chicles/Bubbaloo.jpeg" alt="">
-            <h3>Bubbaloo</h3>
-            <h3>47 Piezas</h3>
-            <div class="price">$47.00</div>
-        </div> 
-        <div class="product" data-name="p-72" data-category="categoria5">
-            <img src="img/ImgDulces/Chicles/Poosh.jpeg" alt="">
-            <h3>Posh</h3>
-            <h3>40 Piezas</h3>
-            <div class="price">$32.00</div>
-        </div> 
-        <div class="product" data-name="p-73" data-category="categoria5">
-            <img src="img/ImgDulces/Chicles/Orbit.jpeg" alt="">
-            <h3>Orbit</h3>
-            <h3>40 Piezas</h3>
-            <div class="price">$96.00</div>
-        </div>
-        <div class="product" data-name="p-74" data-category="categoria5">
-            <img src="img/ImgDulces/Chicles/Canels.jpg" alt="">
-            <h3>Canels</h3>
-            <h3>60 Piezas</h3>
-            <div class="price">$51.00</div>
-        </div>  
-        <div class="product" data-name="p-75" data-category="categoria5">
-            <img src="img/ImgDulces/Chicles/DeLaRosa.jpeg" alt="">
-            <h3>Chicles de la Rosa</h3>
-            <h3>60 Piezas</h3>
-            <div class="price">$43.00</div>
-        </div> 
-        <div class="product" data-name="p-76" data-category="categoria5">
-            <img src="img/ImgDulces/Chicles/MiniBu.jpeg" alt="">
-            <h3>MiniBu</h3>
-            <h3>100 Piezas</h3>
-            <div class="price">$44.00</div>
-        </div>
-        <div class="product" data-name="p-77" data-category="categoria5">
-            <img src="img/ImgDulces/Chicles/MiniBubli.jpeg" alt="">
-            <h3>Mini Bubli</h3>
-            <h3>100 Piezas</h3>
-            <div class="price">$45.00</div>
-        </div>  
-        <!--Gomitas-->
-        <div class="product" data-name="p-78" data-category="categoria6">
-            <img src="img/ImgDulces/Gomas/Morita.webp" alt="">
-            <h3>Goma  Morita</h3>
-            <h3>120kg</h3>
-            <div class="price">$44.00</div>
-        </div> 
-        <div class="product" data-name="p-79" data-category="categoria6">
-            <img src="img/ImgDulces/Gomas/MoritaSurtida.jpeg" alt="">
-            <h3>Goma  Morita Surtida</h3>
-            <h3>120kg</h3>
-            <div class="price">$44.00</div>
-        </div> 
-        <div class="product" data-name="p-80" data-category="categoria6">
-            <img src="img/ImgDulces/Gomas/Tiburones.jpeg" alt="">
-            <h3>Goma  Tiburon</h3>
-            <h3>95kg</h3>
-            <div class="price">$0.00</div>
-        </div> 
-        <div class="product" data-name="p-81"data-category="categoria6">
-            <img src="img/ImgDulces/Gomas/Lombrices.jpeg" alt="">
-            <h3>Gomas Lombrices</h3>
-            <h3>92kg</h3>
-            <div class="price">0.00</div>
-        </div> 
-        <div class="product" data-name="p-82" data-category="categoria6">
-            <img src="img/ImgDulces/Gomas/Ositos.jpeg" alt="">
-            <h3>Gomas Ositos</h3>
-            <h3>92kg</h3>
-            <div class="price">$0.00</div>
-        </div> 
-        <div class="product" data-name="p-83" data-category="categoria6">
-            <img src="img/ImgDulces/Gomas/Frutitas.jpg" alt="">
-            <h3>Gomas Frutita</h3>
-            <h3>84kg</h3>
-            <div class="price">$0.00</div>
-        </div> 
-        <div class="product" data-name="p-84" data-category="categoria6">
-            <img src="img/ImgDulces/Gomas/Pinguinos.jpeg" alt="">
-            <h3>Gomas Pinguinos</h3>
-            <h3>115kg</h3>
-            <div class="price">$0.00</div>
-        </div> 
-        <div class="product" data-name="p-85" data-category="categoria6">
-            <img src="img/ImgDulces/Gomas/Dientes.jpeg" alt="">
-            <h3>Gomas Dientes</h3>
-            <h3>115kg</h3>
-            <div class="price">$0.00</div>
-        </div> 
-        <div class="product" data-name="p-86" data-category="categoria6">
-            <img src="img/ImgDulces/Gomas/MangoChile.jpeg" alt="">
-            <h3>Mango c/ Chile</h3>
-            <h3>80kg</h3>
-            <div class="price">$0.00</div>
-        </div> 
-        <!--MasDulces-->
-        <div class="product" data-name="p-87" data-category="categoria8">
-            <img src="img/ImgDulces/MasDulces/MiniGelatinas.jpeg" alt="">
-            <h3>Mini Gelatina</h3>
-            <h3>40 Piezas</h3>
-            <div class="price">$33.00</div>
-        </div> 
-        <div class="product" data-name="p-88" data-category="categoria8">
-            <img src="img/ImgDulces/MasDulces/Cachetadas.jpeg" alt="">
-            <h3>Cachetada</h3>
-            <h3>20 Piezas</h3>
-            <div class="price">$17.00</div>
-        </div>
-        <div class="product" data-name="p-89" data-category="categoria8">
-            <img src="img/ImgDulces/MasDulces/Muelas.jpeg" alt="">
-            <h3>Muela Mediana</h3>
-            <h3>50 Piezas</h3>
-            <div class="price">$32.00</div>
-        </div>
-        <div class="product" data-name="p-90" data-category="categoria8">
-            <img src="img/ImgDulces/MasDulces/Muelas.jpeg" alt="">
-            <h3>Muela Grande</h3>
-            <h3>50 Piezas</h3>
-            <div class="price">$32.00</div>
-        </div>
-        <div class="product" data-name="p-91" data-category="categoria8">
-            <img src="img/ImgDulces/MasDulces/Picafresa.jpeg" alt="">
-            <h3>Picafresa</h3>
-            <h3>100 Piezas</h3>
-            <div class="price">$79.00</div>
-        </div>
-        <!--Bombones-->
-        <div class="product" data-name="p-92" data-category="categoria7">
-            <img src="img/ImgDulces/Bombones/BombonMini.png" alt="">
-            <h3>Bombon Chico</h3>
-            <h3></h3>
-            <div class="price">$39.00</div>
-        </div>
-        <div class="product" data-name="p-93"data-category="categoria7">
-            <img src="img/ImgDulces/Bombones/BombonMediano.webp" alt="">
-            <h3>Bombon Mediano</h3>
-            <h3>80 Piezas</h3>
-            <div class="price">$39.00</div>
-        </div>
-        <div class="product" data-name="p-94" data-category="categoria7">
-            <img src="img/ImgDulces/Bombones/BombonGrande.webp" alt="">
-            <h3>Bombon Grande</h3>
-            <h3>45 Piezas</h3>
-            <div class="price">$39.00</div>
-        </div>
-        <div class="product" data-name="p-95" data-category="categoria7">
-            <img src="img/ImgDulces/Bombones/BombonGigante.jpeg" alt="">
-            <h3>Bombon Gigante</h3>
-            <h3>30 Piezas</h3>
-            <div class="price">$82.00</div>
-        </div>
-        <div class="product" data-name="p-96" data-category="categoria7">
-            <img src="img/ImgDulces/Bombones/MiniBombon.webp" alt="">
-            <h3>Bombon Mini</h3>
-            <h3>50 Piezas</h3>
-            <div class="price">$100.00</div>
-        </div>
-        <div class="product" data-name="p-97" data-category="categoria8">
-            <img src="img/ImgDulces/Bombones/ObleaChico.jpeg" alt="">
-            <h3>Oblea Recorte Chica</h3>
-            <h3>20 Piezas</h3>
-            <div class="price">$19.00</div>
-        </div>
-        <div class="product" data-name="p-98" data-category="categoria8">
-            <img src="img/ImgDulces/Bombones/ObleaGrande.webp" alt="">
-            <h3>Oblea Recorte Grande</h3>
-            <h3>20 Piezas</h3>
-            <div class="price">$24.00</div>
-        </div>
-       
-            
+            <div class="product" data-name="p-32" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/Pulparindo.jpeg" alt="">
+                <h3>Pulparindo</h3>
+                <h3>20 Piezas</h3>
+                <div class="price">$44.00</div>
+            </div>
+            <div class="product" data-name="p-33" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/MiniPulparindo.png" alt="">
+                <h3>MiniPulparindo</h3>
+                <h3>24 Piezas</h3>
+                <div class="price">$40.00</div>
+            </div>
+            <div class="product" data-name="p-34" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/PulparindoGigante.jpeg" alt="">
+                <h3>Pulparindo Gigante</h3>
+                <h3>16 Piezas</h3>
+                <div class="price">$67.00</div>
+            </div>
+            <div class="product" data-name="p-35" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/GomiKingMango.jpeg" alt="">
+                <h3>Gomi King Mango</h3>
+                <h3>24 Piezas</h3>
+                <div class="price">$45.00</div>
+            </div>
+            <div class="product" data-name="p-36" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/FireKidsSandía.jpeg" alt="">
+                <h3>Fire Kids Sandía</h3>
+                <h3>24 Piezas</h3>
+                <div class="price">$45.00</div>
+            </div>
+            <div class="product" data-name="p-37" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/MegaHuevon.jpeg" alt="">
+                <h3>Mega Huevon/h3>
+                    <h3>30 Piezas</h3>
+                    <div class="price">$47.00</div>
+            </div>
+            <div class="product" data-name="p-38" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/PikoOllitaMediana.jpg" alt="">
+                <h3>Piko Ollita Mediana</h3>
+                <h3>50 Piezas</h3>
+                <div class="price">$26.00</div>
+            </div>
+            <div class="product" data-name="p-39" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/PikoOllitasChica.jpg" alt="">
+                <h3>Piko Ollita Chica</h3>
+                <h3>50 Piezas</h3>
+                <div class="price">$20.00</div>
+            </div>
+            <div class="product" data-name="p-40" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/PikoOllitaGrande.jpeg" alt="">
+                <h3>Poko Ollita Grande</h3>
+                <h3>36 Piezas</h3>
+                <div class="price">$34.00</div>
+            </div>
+            <div class="product" data-name="p-41" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/VasoKarlaChico.jpg" alt="">
+                <h3>Vaso Karla Chico</h3>
+                <h3>24 Piezas</h3>
+                <div class="price">$104.00</div>
+            </div>
+            <div class="product" data-name="p-42" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/TamaRocaPaleta.jpeg" alt="">
+                <h3>Tama-Roca Paleta</h3>
+                <h3>12 Piezas</h3>
+                <div class="price">$93.00</div>
+            </div>
+            <div class="product" data-name="p-43" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/Tamborcitos.jpeg" alt="">
+                <h3>Tamborcitos</h3>
+                <h3>30 Piezas</h3>
+                <div class="price">$23.00</div>
+            </div>
+            <div class="product" data-name="p-44" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/Tronquitos.jpeg" alt="">
+                <h3>Tronquitos</h3>
+                <h3>10 Piezas</h3>
+                <div class="price">$41.00</div>
+            </div>
+            <div class="product" data-name="p-45" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/MiniPelon.jpeg" alt="">
+                <h3>MiniPelon</h3>
+                <h3>18 Piezas</h3>
+                <div class="price">$56.00</div>
+            </div>
+            <div class="product" data-name="p-46" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/Dragonzitos.jpeg" alt="">
+                <h3>Dragonzitos</h3>
+                <h3>100 Piezas</h3>
+                <div class="price">$30.00</div>
+            </div>
+            <div class="product" data-name="p-47" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/TalismanColores.webp" alt="">
+                <h3>Talismanes Colores</h3>
+                <h3>20 Piezas</h3>
+                <div class="price">$17.00</div>
+            </div>
+            <div class="product" data-name="p-48" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/TalismanRojo.webp" alt="">
+                <h3>Talismanes Rojos</h3>
+                <h3>20 Piezas</h3>
+                <div class="price">$17.00</div>
+            </div>
+            <div class="product" data-name="p-49" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/Rellerindos.jpeg" alt="">
+                <h3>Rellerindos</h3>
+                <h3>65 Piezas</h3>
+                <div class="price">$80.00</div>
+            </div>
+            <div class="product" data-name="p-50" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/ZumbaGoma.jpeg" alt="">
+                <h3>Zumba Goma</h3>
+                <h3>20 Piezas</h3>
+                <div class="price">$80.00</div>
+            </div>
+            <div class="product" data-name="p-51" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/LucasPanzon.webp" alt="">
+                <h3>Lucas Panzón</h3>
+                <h3>10 Piezas</h3>
+                <div class="price">$85.00</div>
+            </div>
+            <div class="product" data-name="p-52" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/LucasMuecas.webp" alt="">
+                <h3>Lucas Muecas</h3>
+                <h3>10 Piezas</h3>
+                <div class="price">$82.00</div>
+            </div>
+            <div class="product" data-name="p-53" data-category="categoria2">
+                <img src="img/ImgDulces/Tamarindo/LucasGusano.jpeg" alt="">
+                <h3>Lucas Gusano</h3>
+                <h3>10 Piezas</h3>
+                <div class="price">$80.00</div>
+            </div>
+            <!--Paletas-->
+            <div class="product" data-name="p-54" data-category="categoria3">
+                <img src="img/ImgDulces/Paletas/Cereza.jpeg" alt="">
+                <h3>Paleta Cereza</h3>
+                <h3>50 Piezas</h3>
+                <div class="price">$95.00</div>
+            </div>
+            <div class="product" data-name="p-55" data-category="categoria3">
+                <img src="img/ImgDulces/Paletas/MiniCereza.jpeg" alt="">
+                <h3>Mini Paleta Cereza</h3>
+                <h3>50 Piezas</h3>
+                <div class="price">$65.00</div>
+            </div>
+            <div class="product" data-name="p-56" data-category="categoria3">
+                <img src="img/ImgDulces/Paletas/MiniPaletasFrutita.jpg" alt="">
+                <h3>Mini Paletas Frutita</h3>
+                <h3>100 Piezas</h3>
+                <div class="price">$52.00</div>
+            </div>
+            <div class="product" data-name="p-57" data-category="categoria3">
+                <img src="img/ImgDulces/Paletas/TutsiPop1.jpeg" alt="">
+                <h3>Tutsi Pop</h3>
+                <h3>24 Piezas</h3>
+                <div class="price">$95.00</div>
+            </div>
+            <div class="product" data-name="p-58" data-category="categoria3">
+                <img src="img/ImgDulces/Paletas/EscobonBlue.jpeg" alt="">
+                <h3>Escobon Blue</h3>
+                <h3>40 Piezas</h3>
+                <div class="price">$44.00</div>
+            </div>
+            <div class="product" data-name="p-59" data-category="categoria3">
+                <img src="img/ImgDulces/Paletas/Paleamor.jpeg" alt="">
+                <h3>Paleamor</h3>
+                <h3>40 Piezas</h3>
+                <div class="price">$44.00</div>
+            </div>
+            <div class="product" data-name="p-60" data-category="categoria3">
+                <img src="img/ImgDulces/Paletas/MaraPiña.jpeg" alt="">
+                <h3>Mara Piña</h3>
+                <h3>40 Piezas</h3>
+                <div class="price">$44.00</div>
+            </div>
+            <div class="product" data-name="p-61" data-category="categoria3">
+                <img src="img/ImgDulces/Paletas/MaraSandia.webp" alt="">
+                <h3>Mara Sandia</h3>
+                <h3>40 Piezas</h3>
+                <div class="price">$44.00</div>
+            </div>
+            <div class="product" data-name="p-62" data-category="categoria3">
+                <img src="img/ImgDulces/Paletas/Molonkitos.jpeg" alt="">
+                <h3>Molonkitos</h3>
+                <h3>40 Piezas</h3>
+                <div class="price">$44.00</div>
+            </div>
+            <div class="product" data-name="p-63" data-category="categoria3">
+                <img src="img/ImgDulces/Paletas/VeroMixChile.jpeg" alt="">
+                <h3>Vero Mix Chile</h3>
+                <h3>20 Piezas</h3>
+                <div class="price">$44.00</div>
+            </div>
+            <div class="product" data-name="p-64" data-category="categoria3">
+                <img src="img/ImgDulces/Paletas/VeroMixDulce.jpeg" alt="">
+                <h3>Vero Mix Dulce</h3>
+                <h3>20 Piezas</h3>
+                <div class="price">$44.00</div>
+            </div>
+            <div class="product" data-name="p-65" data-category="categoria3">
+                <img src="img/ImgDulces/Paletas/MaraMango.jpeg" alt="">
+                <h3>Mara Mango</h3>
+                <h3>40 Piezas</h3>
+                <div class="price">$44.00</div>
+            </div>
+            <!--Dulces Cafe-->
+            <div class="product" data-name="p-66" data-category="categoria4">
+                <img src="img/ImgDulces/DulcesCafe/RicosBesos.jpeg" alt="">
+                <h3>Ricos Besos</h3>
+                <h3>100 Piezas</h3>
+                <div class="price">$67.00</div>
+            </div>
+            <div class="product" data-name="p-67" data-category="categoria4">
+                <img src="img/ImgDulces/DulcesCafe/Natilla.jpeg" alt="">
+                <h3>Natilla</h3>
+                <h3>100 Piezas</h3>
+                <div class="price">$67.00</div>
+            </div>
+            <div class="product" data-name="p-68" data-category="categoria4">
+                <img src="img/ImgDulces/DulcesCafe/Damy.jpeg" alt="">
+                <h3>Damy</h3>
+                <h3>100 Piezas</h3>
+                <div class="price">$67.00</div>
+            </div>
+            <div class="product" data-name="p-69" data-category="categoria4">
+                <img src="img/ImgDulces/DulcesCafe/Tomy.jpeg" alt="">
+                <h3>Tomy</h3>
+                <h3>100 Piezas</h3>
+                <div class="price">$67.00</div>
+            </div>
+            <div class="product" data-name="p-70" data-category="categoria4">
+                <img src="img/ImgDulces/DulcesCafe/Cachitos.jpeg" alt="">
+                <h3>Cachitos</h3>
+                <h3>100 Piezas</h3>
+                <div class="price">$67.00</div>
+            </div>
+            <!--Chicles-->
+            <div class="product" data-name="p-71" data-category="categoria5">
+                <img src="img/ImgDulces/Chicles/Bubbaloo.jpeg" alt="">
+                <h3>Bubbaloo</h3>
+                <h3>47 Piezas</h3>
+                <div class="price">$47.00</div>
+            </div>
+            <div class="product" data-name="p-72" data-category="categoria5">
+                <img src="img/ImgDulces/Chicles/Poosh.jpeg" alt="">
+                <h3>Posh</h3>
+                <h3>40 Piezas</h3>
+                <div class="price">$32.00</div>
+            </div>
+            <div class="product" data-name="p-73" data-category="categoria5">
+                <img src="img/ImgDulces/Chicles/Orbit.jpeg" alt="">
+                <h3>Orbit</h3>
+                <h3>40 Piezas</h3>
+                <div class="price">$96.00</div>
+            </div>
+            <div class="product" data-name="p-74" data-category="categoria5">
+                <img src="img/ImgDulces/Chicles/Canels.jpg" alt="">
+                <h3>Canels</h3>
+                <h3>60 Piezas</h3>
+                <div class="price">$51.00</div>
+            </div>
+            <div class="product" data-name="p-75" data-category="categoria5">
+                <img src="img/ImgDulces/Chicles/DeLaRosa.jpeg" alt="">
+                <h3>Chicles de la Rosa</h3>
+                <h3>60 Piezas</h3>
+                <div class="price">$43.00</div>
+            </div>
+            <div class="product" data-name="p-76" data-category="categoria5">
+                <img src="img/ImgDulces/Chicles/MiniBu.jpeg" alt="">
+                <h3>MiniBu</h3>
+                <h3>100 Piezas</h3>
+                <div class="price">$44.00</div>
+            </div>
+            <div class="product" data-name="p-77" data-category="categoria5">
+                <img src="img/ImgDulces/Chicles/MiniBubli.jpeg" alt="">
+                <h3>Mini Bubli</h3>
+                <h3>100 Piezas</h3>
+                <div class="price">$45.00</div>
+            </div>
+            <!--Gomitas-->
+            <div class="product" data-name="p-78" data-category="categoria6">
+                <img src="img/ImgDulces/Gomas/Morita.webp" alt="">
+                <h3>Goma Morita</h3>
+                <h3>120kg</h3>
+                <div class="price">$44.00</div>
+            </div>
+            <div class="product" data-name="p-79" data-category="categoria6">
+                <img src="img/ImgDulces/Gomas/MoritaSurtida.jpeg" alt="">
+                <h3>Goma Morita Surtida</h3>
+                <h3>120kg</h3>
+                <div class="price">$44.00</div>
+            </div>
+            <div class="product" data-name="p-80" data-category="categoria6">
+                <img src="img/ImgDulces/Gomas/Tiburones.jpeg" alt="">
+                <h3>Goma Tiburon</h3>
+                <h3>95kg</h3>
+                <div class="price">$0.00</div>
+            </div>
+            <div class="product" data-name="p-81" data-category="categoria6">
+                <img src="img/ImgDulces/Gomas/Lombrices.jpeg" alt="">
+                <h3>Gomas Lombrices</h3>
+                <h3>92kg</h3>
+                <div class="price">0.00</div>
+            </div>
+            <div class="product" data-name="p-82" data-category="categoria6">
+                <img src="img/ImgDulces/Gomas/Ositos.jpeg" alt="">
+                <h3>Gomas Ositos</h3>
+                <h3>92kg</h3>
+                <div class="price">$0.00</div>
+            </div>
+            <div class="product" data-name="p-83" data-category="categoria6">
+                <img src="img/ImgDulces/Gomas/Frutitas.jpg" alt="">
+                <h3>Gomas Frutita</h3>
+                <h3>84kg</h3>
+                <div class="price">$0.00</div>
+            </div>
+            <div class="product" data-name="p-84" data-category="categoria6">
+                <img src="img/ImgDulces/Gomas/Pinguinos.jpeg" alt="">
+                <h3>Gomas Pinguinos</h3>
+                <h3>115kg</h3>
+                <div class="price">$0.00</div>
+            </div>
+            <div class="product" data-name="p-85" data-category="categoria6">
+                <img src="img/ImgDulces/Gomas/Dientes.jpeg" alt="">
+                <h3>Gomas Dientes</h3>
+                <h3>115kg</h3>
+                <div class="price">$0.00</div>
+            </div>
+            <div class="product" data-name="p-86" data-category="categoria6">
+                <img src="img/ImgDulces/Gomas/MangoChile.jpeg" alt="">
+                <h3>Mango c/ Chile</h3>
+                <h3>80kg</h3>
+                <div class="price">$0.00</div>
+            </div>
+            <!--MasDulces-->
+            <div class="product" data-name="p-87" data-category="categoria8">
+                <img src="img/ImgDulces/MasDulces/MiniGelatinas.jpeg" alt="">
+                <h3>Mini Gelatina</h3>
+                <h3>40 Piezas</h3>
+                <div class="price">$33.00</div>
+            </div>
+            <div class="product" data-name="p-88" data-category="categoria8">
+                <img src="img/ImgDulces/MasDulces/Cachetadas.jpeg" alt="">
+                <h3>Cachetada</h3>
+                <h3>20 Piezas</h3>
+                <div class="price">$17.00</div>
+            </div>
+            <div class="product" data-name="p-89" data-category="categoria8">
+                <img src="img/ImgDulces/MasDulces/Muelas.jpeg" alt="">
+                <h3>Muela Mediana</h3>
+                <h3>50 Piezas</h3>
+                <div class="price">$32.00</div>
+            </div>
+            <div class="product" data-name="p-90" data-category="categoria8">
+                <img src="img/ImgDulces/MasDulces/Muelas.jpeg" alt="">
+                <h3>Muela Grande</h3>
+                <h3>50 Piezas</h3>
+                <div class="price">$32.00</div>
+            </div>
+            <div class="product" data-name="p-91" data-category="categoria8">
+                <img src="img/ImgDulces/MasDulces/Picafresa.jpeg" alt="">
+                <h3>Picafresa</h3>
+                <h3>100 Piezas</h3>
+                <div class="price">$79.00</div>
+            </div>
+            <!--Bombones-->
+            <div class="product" data-name="p-92" data-category="categoria7">
+                <img src="img/ImgDulces/Bombones/BombonMini.png" alt="">
+                <h3>Bombon Chico</h3>
+                <h3></h3>
+                <div class="price">$39.00</div>
+            </div>
+            <div class="product" data-name="p-93" data-category="categoria7">
+                <img src="img/ImgDulces/Bombones/BombonMediano.webp" alt="">
+                <h3>Bombon Mediano</h3>
+                <h3>80 Piezas</h3>
+                <div class="price">$39.00</div>
+            </div>
+            <div class="product" data-name="p-94" data-category="categoria7">
+                <img src="img/ImgDulces/Bombones/BombonGrande.webp" alt="">
+                <h3>Bombon Grande</h3>
+                <h3>45 Piezas</h3>
+                <div class="price">$39.00</div>
+            </div>
+            <div class="product" data-name="p-95" data-category="categoria7">
+                <img src="img/ImgDulces/Bombones/BombonGigante.jpeg" alt="">
+                <h3>Bombon Gigante</h3>
+                <h3>30 Piezas</h3>
+                <div class="price">$82.00</div>
+            </div>
+            <div class="product" data-name="p-96" data-category="categoria7">
+                <img src="img/ImgDulces/Bombones/MiniBombon.webp" alt="">
+                <h3>Bombon Mini</h3>
+                <h3>50 Piezas</h3>
+                <div class="price">$100.00</div>
+            </div>
+            <div class="product" data-name="p-97" data-category="categoria8">
+                <img src="img/ImgDulces/Bombones/ObleaChico.jpeg" alt="">
+                <h3>Oblea Recorte Chica</h3>
+                <h3>20 Piezas</h3>
+                <div class="price">$19.00</div>
+            </div>
+            <div class="product" data-name="p-98" data-category="categoria8">
+                <img src="img/ImgDulces/Bombones/ObleaGrande.webp" alt="">
+                <h3>Oblea Recorte Grande</h3>
+                <h3>20 Piezas</h3>
+                <div class="price">$24.00</div>
+            </div>
+
+
 
         </div>
     </div>
@@ -719,8 +730,8 @@
 
     <!-- Vista previa de productos -->
     <div class="products-preview">
-         <!--Chocolates-->
-         <div class="preview" data-target="p-1">
+        <!--Chocolates-->
+        <div class="preview" data-target="p-1">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Chocolates/BinchiOriginal.jpeg" alt="">
             <h3>Bianchi Chocolate Original</h3>
@@ -735,7 +746,8 @@
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Chocolates/BianchiToqueMenta.jpeg" alt="">
             <h3>Bianchi Chocolate Toque de Menta</h3>
-            <p>Malvavisco Bianchi cubierto con chocolate con un toque de menta / Display con 10 bolsas de 35 grs c/u.</p>
+            <p>Malvavisco Bianchi cubierto con chocolate con un toque de menta / Display con 10 bolsas de 35 grs c/u.
+            </p>
             <span class="precio">$80.00</span>
             <div class="botones">
                 <a href="#" class="comprar">Comprar ahora</a>
@@ -779,7 +791,7 @@
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Chocolates/MiniWinky.jpeg" alt="">
             <h3>MiniWinky</h3>
-            <p>Mini Winky-  24pzs – 15g c/u.</p>
+            <p>Mini Winky- 24pzs – 15g c/u.</p>
             <span class="precio">$55.00</span>
             <div class="botones">
                 <a href="#" class="comprar">Comprar ahora</a>
@@ -791,7 +803,7 @@
             <img src="img/ImgDulces/Chocolates/NugsRecreo.jpeg" alt="">
             <h3>Nugs Recreo</h3>
             <p>Chocolate con nougat, caramelo de leche y cacahuate cubierto con
-                 chocolate. 24 Piezas.</p>
+                chocolate. 24 Piezas.</p>
             <span class="precio">$64.00</span>
             <div class="botones">
                 <a href="#" class="comprar">Comprar ahora</a>
@@ -929,7 +941,7 @@
                 <a href="#" class="comprar">Comprar ahora</a>
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
-        </div>  
+        </div>
         <div class="preview" data-target="p-20">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Chocolates/MiniMamut.jpeg" alt="">
@@ -1022,7 +1034,7 @@
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Chocolates/MIniCarlosV.jpeg" alt="">
             <h3>Mini Carlos V</h3>
-            <p> Barra  de chocolate elaborada con leche 20 Piezas.</p>
+            <p> Barra de chocolate elaborada con leche 20 Piezas.</p>
             <span class="precio">$50.00</span>
             <div class="botones">
                 <a href="#" class="comprar">Comprar ahora</a>
@@ -1073,7 +1085,7 @@
                 <a href="#" class="comprar">Comprar ahora</a>
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
-        </div>  
+        </div>
         <div class="preview" data-target="p-33">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/MiniPulparindo.png" alt="">
@@ -1084,18 +1096,18 @@
                 <a href="#" class="comprar">Comprar ahora</a>
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
-        </div>  
+        </div>
         <div class="preview" data-target="p-34">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/PulparindoGigante.jpeg" alt="">
-            <h3>Pulparindo  Gigante</h3>
+            <h3>Pulparindo Gigante</h3>
             <p>Barrita con tamarindo natural, adicionada con sal y más chile 16 Piezas.</p>
             <span class="precio">$67.00</span>
             <div class="botones">
                 <a href="#" class="comprar">Comprar ahora</a>
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
-        </div>  
+        </div>
         <div class="preview" data-target="p-35">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/GomiKingMango.jpeg" alt="">
@@ -1106,7 +1118,7 @@
                 <a href="#" class="comprar">Comprar ahora</a>
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
-        </div>  
+        </div>
         <div class="preview" data-target="p-36">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/FireKidsSandía.jpeg" alt="">
@@ -1117,7 +1129,7 @@
                 <a href="#" class="comprar">Comprar ahora</a>
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
-        </div> 
+        </div>
         <div class="preview" data-target="p-37">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/MegaHuevon.jpeg" alt="">
@@ -1139,7 +1151,7 @@
                 <a href="#" class="comprar">Comprar ahora</a>
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
-        </div>  
+        </div>
         <div class="preview" data-target="p-39">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/PikoOllitasChica.jpg" alt="">
@@ -1161,7 +1173,7 @@
                 <a href="#" class="comprar">Comprar ahora</a>
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
-        </div>  
+        </div>
         <div class="preview" data-target="p-41">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/VasoKarlaChico.jpg" alt="">
@@ -1172,7 +1184,7 @@
                 <a href="#" class="comprar">Comprar ahora</a>
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
-        </div>  
+        </div>
         <div class="preview" data-target="p-42">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/TamaRocaPaleta.jpeg" alt="">
@@ -1183,7 +1195,7 @@
                 <a href="#" class="comprar">Comprar ahora</a>
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
-        </div>  
+        </div>
         <div class="preview" data-target="p-43">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/Tamborcitos.jpeg" alt="">
@@ -1194,7 +1206,7 @@
                 <a href="#" class="comprar">Comprar ahora</a>
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
-        </div>  
+        </div>
         <div class="preview" data-target="p-44">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/Tronquitos.jpeg" alt="">
@@ -1205,7 +1217,7 @@
                 <a href="#" class="comprar">Comprar ahora</a>
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
-        </div> 
+        </div>
         <div class="preview" data-target="p-45">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/MiniPelon.jpeg" alt="">
@@ -1216,7 +1228,7 @@
                 <a href="#" class="comprar">Comprar ahora</a>
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
-        </div> 
+        </div>
         <div class="preview" data-target="p-46">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/Dragonzitos.jpeg" alt="">
@@ -1227,24 +1239,24 @@
                 <a href="#" class="comprar">Comprar ahora</a>
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
-        </div> 
+        </div>
         <div class="preview" data-target="p-47">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/TalismanColores.webp" alt="">
             <h3>Talismanes de Colores</h3>
-            <p>Chilitos de El Talismán son deliciosos por su sabor 
+            <p>Chilitos de El Talismán son deliciosos por su sabor
                 aciduladito además de su toque picante leve, 20 Piezas.</p>
             <span class="precio">$17.00</span>
             <div class="botones">
                 <a href="#" class="comprar">Comprar ahora</a>
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
-        </div> 
+        </div>
         <div class="preview" data-target="p-48">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/TalismanRojo.webp" alt="">
             <h3>Talismanes Rojos</h3>
-            <p>Chilitos de El Talismán son deliciosos por su sabor 
+            <p>Chilitos de El Talismán son deliciosos por su sabor
                 aciduladito además de su toque picante leve, 20 Piezas.</p>
             <span class="precio">$17.00</span>
             <div class="botones">
@@ -1267,7 +1279,7 @@
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/ZumbaGoma.jpeg" alt="">
             <h3>Zumba Goma</h3>
-            <p>Gomita dulce mexicana con cubierta de tamarindo 
+            <p>Gomita dulce mexicana con cubierta de tamarindo
                 que puede tener diferentes sabores, como mango, fresa o piña , 20 Piezas.</p>
             <span class="precio">$80.00</span>
             <div class="botones">
@@ -1279,7 +1291,7 @@
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/LucasPanzon.webp" alt="">
             <h3>Lucas Panzón</h3>
-            <p> Paleta de caramelo con 
+            <p> Paleta de caramelo con
                 sabor a sandía y salsa líquida de chamoy enchilado , 10 Piezas.</p>
             <span class="precio">$85.00</span>
             <div class="botones">
@@ -1291,7 +1303,8 @@
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Tamarindo/LucasMuecas.webp" alt="">
             <h3>Lucas Muecas</h3>
-            <p> Caramelo con una piruleta y chile en polvo ácido que hacen la mejor mezcla entre dulce y ácido, 10 Piezas.</p>
+            <p> Caramelo con una piruleta y chile en polvo ácido que hacen la mejor mezcla entre dulce y ácido, 10
+                Piezas.</p>
             <span class="precio">$82.00</span>
             <div class="botones">
                 <a href="#" class="comprar">Comprar ahora</a>
@@ -1669,7 +1682,7 @@
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Gomas/MangoChile.jpeg" alt="">
             <h3>Gomas Mango con Chile</h3>
-            <p>Caramelo masticable  con sabor a mango y recubiertas de chile, 80Kg.</p>
+            <p>Caramelo masticable con sabor a mango y recubiertas de chile, 80Kg.</p>
             <span class="precio">$0.00</span>
             <div class="botones">
                 <a href="#" class="comprar">Comprar ahora</a>
@@ -1788,7 +1801,7 @@
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
         </div>
-       
+
         <div class="preview" data-target="p-97">
             <i class="fas fa-times close-preview"></i>
             <img src="img/ImgDulces/Bombones/ObleaChico.jpeg" alt="">
@@ -1811,9 +1824,9 @@
                 <a href="#" class="carro">Añadir al carro</a>
             </div>
         </div>
-                             
+
     </div>
-</div>
+    </div>
 
 
     <!-- Footer -->

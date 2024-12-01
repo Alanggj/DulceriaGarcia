@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="js/productos.js" defer></script>
+    <script src="js/busqueda.js" defer></script>
     <script src="js/Filtro.js" defer></script>
     
 </head>
@@ -32,8 +33,17 @@
             <div class="logito">
                 <h2>DULCERÍA <a href="index.html"><img src="img/logo.png"></a> GARCÍA</h2>
             </div>
+        </div>
+        <div class="container2">
+            <div class="busqueda">
+                <div class="search">
+                    <input type="text" id="find" placeholder="Buscar en Tienda" style="width: 0;" onkeyup="search()" />
+                    <i class="fas fa-search" id="search-icon" onclick="toggleSearch()"></i>
+                </div>
+            </div>
             <div class="carrito">
                 <a href="comprar.html">
+
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart"
                         width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
