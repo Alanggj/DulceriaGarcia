@@ -1,0 +1,76 @@
+.imagen{
+    width: 60%;
+    height: auto;
+}
+
+.text1{
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    font-size: 2.5rem;
+}
+
+.text2{
+    font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    font-size: 2rem;
+}
+
+.slider-box{
+    width: auto;
+    height: auto;
+    margin: 50px auto 0;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+@keyframes slide{
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+   
+@media(max-width: 991px){
+
+    body{
+        padding: 30px;
+    }
+
+    .slider-box{
+        width:100%;
+    }
+    
+    .text1{
+        font-size: 100%;
+    }
+
+    .text2{
+        font-size: 85%;
+    }
+}
