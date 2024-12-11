@@ -265,7 +265,7 @@ img{
     .redes2 {
         bottom: 20px; 
         gap: 30px; 
-       /* transform: translateY(-420%);*/
+       transform: translateY(-420%);
       
     }
 
@@ -279,7 +279,7 @@ img{
     .redes2 {
         bottom: 10px; 
         gap: 35px;
-        /*transform: translateY(-420%);*/
+        transform: translateY(-420%);
       
 
     }
