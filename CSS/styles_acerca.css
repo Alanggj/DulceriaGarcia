@@ -1,145 +1,187 @@
 :root{
-    --morado: #c159c2;
-    --rosa: #ea899a;
-    --papaya: 	#D8BFD8;
-    --mor: #9932CC;
-    }
-    
-      
-    
-      html {
-        font-size: 62.5%;
-        box-sizing: border-box;
-      }
-      
-      *,
-      *::before,
-      *::after {
-        box-sizing: inherit;
-      }
-      
-      
-      p {
-        font-size: 1.8rem;
-        font-family: Arial, Helvetica, sans-serif;
-        color: var(--negro);
-        text-align: justify;
-      }
-      
-      a {
-        text-decoration: none;
-      }
-      
-      h1,
-      h2,
-      h3, 
-      h4,
-      h5 {
-        text-align: center;
-        color: var(--gris);
-        font-family: var(--fuentePrincipal);
-      }
-      
-      h1 {
-        font-size: 4rem;
-      }
-      h2 {
-        font-size: 3.7rem;
-      }
-      h3 {
-        font-size: 3.2rem;
-        color: var(--rosa);
-      }
-    
-      h4{
-        font-size: 2.4rem;
-        color: var(--morado);
-      }
-    
-      h5{
-        font-size: 3.2rem;
-        color: var(--mor);
-      }
-      
-      img{
-        max-width: 100%;
-      }
-    
-    
-      .acercaDe {
-        display: grid;
-        grid-template-rows: repeat(2, auto);
-        padding: 30px;
-      }
-      
-      @media (min-width: 768px) {
-        .acercaDe {
-          grid-template-columns: repeat(2, 1fr);
-          column-gap: 2rem;
-        }
-      }
-      
-      .acercaDe_imagen {
-        grid-row: 1 / 2;
-        width: 80%; 
-        height: 70%; 
-        justify-self: center;  /* Centra la imagen horizontalmente */
-        align-self: center;    /* Centra la imagen verticalmente */
-      }
-      
-      @media (min-width: 768px) {
-        .acercaDe_imagn {
-          grid-column: 2/ 3;
-        }
-      }
-      
-      .contenedor_imagen {
-        width: 100%;
-        max-width: 500px;
-        position: relative; 
-        display: inline-block;
-      }
-      
-    
-      .acercaDe_imagen{
-        grid-row: 1 / 2;
-        width: 50%; 
-        height: auto; 
-         
-         
-      }
-      
-       @media(min-width: 768px){ 
-        .acercaDe_imagen{
-          grid-column: 2 / 3;
-        }
-      }
+  --morado: #c159c2;
+  --rosa: #ea899a;
+  --papaya: 	#D8BFD8;
+  --mor: #9932CC;
+  }
+  
 
-      .bloques{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 3rem;
-        margin: 10px; /* Separación del contenedor respecto a otros elementos */ 
-        padding: 20px; /* Espacio interior entre el borde del contenedor y el texto */ 
-        background-color: var(--papaya); /* Color de fondo del contenedor */
-        border: 1px solid #ccc;
-      
-      }
-       @media(min-width: 768px){
-        .bloques{
-          grid-template-columns: repeat(4,1fr);
-        } 
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
     }
     
     
-    
-    .bloque_imagen{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    p {
+      font-size: 1.8rem;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--negro);
+      text-align: justify;
     }
     
-    .bloque_capa{ 
+    a {
+      text-decoration: none;
+    }
+    
+    h1,
+    h2,
+    h3, 
+    h4,
+    h5 {
+      text-align: center;
+      color: var(--gris);
+      font-family: var(--fuentePrincipal);
+    }
+    
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 3.7rem;
+    }
+    h3 {
+      font-size: 3.2rem;
+      color: var(--rosa);
+    }
+  
+    h4{
+      font-size: 2.4rem;
+      color: var(--morado);
+    }
+  
+    h5{
+      font-size: 3.2rem;
+      color: var(--mor);
+    }
+    
+    img{
+      max-width: 100%;
+    }
+  
+  
+    .acercaDe {
       display: grid;
-        gap: 3rem;
+      grid-template-rows: repeat(2, auto);
+      padding: 30px;
     }
+    
+    @media (min-width: 768px) {
+      .acercaDe {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+      }
+    }
+    
+    .acercaDe_imagen {
+      grid-row: 1 / 2;
+      width: 80%; 
+      height: 70%; 
+      justify-self: center;  /* Centra la imagen horizontalmente */
+      align-self: center;    /* Centra la imagen verticalmente */
+    }
+    
+    @media (min-width: 768px) {
+      .acercaDe_imagn {
+        grid-column: 2/ 3;
+      }
+    }
+    
+    .contenedor_imagen {
+      width: 100%;
+      max-width: 500px;
+      position: relative; 
+      display: inline-block;
+    }
+    
+  
+    .acercaDe_imagen{
+      grid-row: 1 / 2;
+      width: 50%; 
+      height: auto; 
+       
+       
+    }
+    
+     @media(min-width: 768px){ 
+      .acercaDe_imagen{
+        grid-column: 2 / 3;
+      }
+    }
+
+    .bloques{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 3rem;
+      margin: 10px; /* Separación del contenedor respecto a otros elementos */ 
+      padding: 20px; /* Espacio interior entre el borde del contenedor y el texto */ 
+      background-color: var(--papaya); /* Color de fondo del contenedor */
+      border: 1px solid #ccc;
+    
+    }
+     @media(min-width: 768px){
+      .bloques{
+        grid-template-columns: repeat(4,1fr);
+      } 
+  }
+  
+  .bloque_imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*.bloque_capa{ 
+    display: grid;
+      gap: 3rem;
+  }*/
+
+  .bloque_capa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Opcional para centrar el texto */
+}
+.bloque_imagen {
+    margin-bottom: 10px; /* Espacio entre imagen y texto */
+}
+
+.bloques {
+  display: flex; /* Activa flexbox */
+  flex-wrap: wrap; /* Permite que los bloques bajen a la siguiente fila */
+  gap: 20px; /* Espacio entre los bloques */
+  justify-content: space-between; /* Acomoda bloques inicialmente separados */
+}
+
+.bloque {
+  flex: 1 1 calc(25% - 20px); /* 4 bloques por fila en pantallas grandes */
+  box-sizing: border-box; /* Padding y border no afectan el ancho total */
+  min-width: 200px; /* Previene que los bloques sean demasiado pequeños */
+}
+
+@media (max-width: 1024px) {
+  .bloque {
+      flex: 1 1 calc(50% - 20px); /* 2 bloques por fila en tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .bloque {
+      flex: 1 1 100%; /* 1 bloque por fila en móviles */
+  }
+}
+
+.bloque img {
+  max-width: 100%; /* Evita que las imágenes se desborden */
+  height: auto; /* Mantiene proporciones */
+}
+
+.bloque h4, .bloque p {
+  text-align: center; /* Centra el texto */
+}
+
+
+.cont-menu{
+  text-align: justify;
+}
