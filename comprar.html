@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styles_header_footer.css">
     <link rel="stylesheet" href="css/styles_inicio.css">
-    <link rel="stylesheet" href="css/carrito_compra.css">
+   
     <link rel="stylesheet" href="css/comprando.css">
+    <script src="js/carrito.js" defer></script>
     <!--Funtes_Utilizadas-->
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
-    <script src="js/carrito.js" defer></script>
+
 
 
 </head>
 
-<body>
+<body class="body1">
     <header class="header">
         <div class="container">
             <div class="btn-menu">
@@ -29,88 +31,104 @@
             <div class="logito">
                 <h2>DULCERÍA <a href="index.html"><img src="img/logo.png"></a> GARCÍA</h2>
             </div>
-            <div class="carrito">
-                <a href="comprar.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart"
-                        width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                        <path d="M17 17h-11v-14h-2" />
-                        <path d="M6 5l14 1l-1 7h-13" />
-                    </svg>
-                </a>
-            </div>
+         
         </div>
     </header>
+    
+
+
+
+<div class="contenedorjefe">
 
     <div class="visa-card">
-      <div class="logoContainer">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          x="0px"
-          y="0px"
-          width="23"
-          height="23"
-          viewBox="0 0 48 48"
-          class="svgLogo"
-        >
-          <path
-            fill="#ff9800"
-            d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z"
-          ></path>
-          <path
-            fill="#d50000"
-            d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z"
-          ></path>
-          <path
-            fill="#ff3d00"
-            d="M18,24c0,4.755,2.376,8.95,6,11.48c3.624-2.53,6-6.725,6-11.48s-2.376-8.95-6-11.48 C20.376,15.05,18,19.245,18,24z"
-          ></path>
-        </svg>
-      </div>
-      <div class="number-container">
-        <label class="input-label" for="cardNumber">NUMERO DE TARJETA</label>
-        <input
-          class="inputstyle"
-          id="cardNumber"
-          placeholder="XXXX XXXX XXXX XXXX"
-          name="cardNumber"
-          type="text"
-          maxlength="19"
-        />
-      </div>
-    
-      <div class="name-date-cvv-container">
-        <div class="name-wrapper">
-          <label class="input-label" for="holderName">COMPRADOR</label>
+        <div class="logoContainer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="23"
+            height="23"
+            viewBox="0 0 48 48"
+            class="svgLogo"
+          >
+            <path
+              fill="#ff9800"
+              d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z"
+            ></path>
+            <path
+              fill="#d50000"
+              d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z"
+            ></path>
+            <path
+              fill="#ff3d00"
+              d="M18,24c0,4.755,2.376,8.95,6,11.48c3.624-2.53,6-6.725,6-11.48s-2.376-8.95-6-11.48 C20.376,15.05,18,19.245,18,24z"
+            ></path>
+          </svg>
+        </div>
+        <div class="number-container">
+          <label class="input-label" for="cardNumber">NUMERO DE TARJETA</label>
           <input
             class="inputstyle"
-            id="holderName"
-            placeholder="NOMBRE COMPLETO"
+            id="cardNumber"
+            placeholder="XXXX XXXX XXXX XXXX"
+            name="cardNumber"
             type="text"
+            maxlength="19"
           />
         </div>
-    
-        <div class="expiry-wrapper">
-          <label class="input-label" for="expiry">FECHA DE EXPIRACIÓN</label>
-          <input class="inputstyle" id="expiry" placeholder="MM/YY" type="text" />
-        </div>
-        <div class="cvv-wrapper">
-          <label class="input-label" for="cvv">CVV</label>
-          <input
-            class="inputstyle"
-            placeholder="***"
-            maxlength="3"
-            id="cvv"
-            type="password"
-          />
+      
+        <div class="name-date-cvv-container">
+          <div class="name-wrapper">
+            <label class="input-label" for="holderName">COMPRADOR</label>
+            <input
+              class="inputstyle"
+              id="holderName"
+              placeholder="NOMBRE COMPLETO"
+              type="text"
+            />
+          </div>
+      
+          <div class="expiry-wrapper">
+            <label class="input-label" for="expiry">FECHA DE EXPIRACIÓN</label>
+            <input class="inputstyle" id="expiry" placeholder="MM/YY" type="text" />
+          </div>
+          <div class="cvv-wrapper">
+            <label class="input-label" for="cvv">CVV</label>
+            <input
+              class="inputstyle"
+              placeholder="***"
+              maxlength="3"
+              id="cvv"
+              type="password"
+            />
+          </div>
         </div>
       </div>
-    </div>
-    
+      
 
+</div>
+
+
+<div id="carrito-compra" class="carrito-compra">
+
+
+  <div class="partebaja">
+
+      <div class="items-carrito"></div>
+      <div class="pie-carrito">
+          <div class="total-importe">
+              <h2 class="subtitulo">Subtotal</h2>
+              <h4 id="total-carrito">0.00$</h4>
+          </div>
+          <div class="boton-carrito">
+              
+              <a href="comprar.html">
+                  <button type="submit" class="boton-checkout" id="boton-checkout">Comprar!</button>
+              </a>    
+          </div>
+      </div>
+  </div>
+</div>
 
     <footer class="contenedor_footer">
         <div class="logo">
@@ -152,6 +170,7 @@
 
 
     <script>
+  
         document.getElementById('cardNumber').addEventListener('input', function (e) {
           let value = e.target.value.replace(/\D/g, '');
           let formattedValue = value.replace(/(.{4})/g, '$1 ').trim();
@@ -166,8 +185,27 @@
             e.target.value = value;
           }
         });
-      </script>
+         // Esperamos que el documento cargue completamente
+    document.addEventListener("DOMContentLoaded", function () {
+        // Obtener el botón "Comprar" y la tarjeta
+        const botonCheckout = document.getElementById("boton-checkout");
+        const tarjeta = document.querySelector(".card");
 
+        // Agregar un evento para cuando se presione el botón de comprar
+        botonCheckout.addEventListener("click", function (e) {
+            // Prevenir el comportamiento por defecto del formulario
+            e.preventDefault();
+
+            // Mostrar la tarjeta
+            tarjeta.style.display = "block";
+
+            // Ocultar la tarjeta después de 3 segundos (puedes ajustar este tiempo)
+            setTimeout(function () {
+                tarjeta.style.display = "none";
+            }, 3000); // 3000ms = 3 segundos
+        });
+    });
+      </script>
 
     
 </body>

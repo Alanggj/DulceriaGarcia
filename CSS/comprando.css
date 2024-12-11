@@ -1,4 +1,16 @@
-/* From Uiverse.io by vinodjangid07 */ 
+.contenedorjefe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: 0;
+ 
+}
+
+.items-carrito {
+  display: none;
+}
+
 .visa-card {
     display: flex;
     flex-direction: column;
@@ -88,3 +100,37 @@
     width: 100%;
   }
   
+
+  
+
+  .pie-carrito .boton-carrito {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.boton-checkout {
+    background-color: #f635b6; 
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-checkout:hover {
+    background-color: #cf27c1; 
+}
+
+.subtitulo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#total-carrito {
+    color: #ff0295;
+    text-align: center;
+}
+
+
