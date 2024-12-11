@@ -281,5 +281,12 @@ img{
     }
 }
 
+a svg {
+    text-decoration: none; /* Elimina el subrayado */
+    display: inline-block; /* Asegura que SVG se comporte correctamente */
+}
+a {
+    text-decoration: none; /* Aplica para todos los enlaces */
+}
 
 /* FIN DEL FOOTER */
