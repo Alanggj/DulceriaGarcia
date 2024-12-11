@@ -2,8 +2,6 @@
 .carrito-compra {
     position: fixed;
     top: 0;    
-    max-width: 500px;
-    min-width: 100px;
     right: -500px; 
     width: 500px; 
     height: 100%; 
@@ -14,6 +12,7 @@
     overflow-y: auto; 
 }
 
+/* Mostrar el carrito */
 .carrito-compra.mostrar {
     right: 0; 
 }
@@ -42,7 +41,7 @@
 }
 
 .cabecera-carrito h3 {
-    font-size: 2rem; 
+    font-size: 1.5rem; 
 }
 
 /* Estilo para los productos del carrito */
@@ -117,4 +116,50 @@
 #total-carrito {
     color: #ff0295;
     text-align: center;
+}
+
+/* Media Queries para responsive */
+
+/* Pantallas pequeñas, menos de 500px */
+@media (max-width: 500px) {
+    .carrito-compra {
+        width: 100%;
+        right: -100%;
+        transition: right 0.3s ease;
+    }
+    .carrito-compra.mostrar {
+        right: 0;
+    }
+    .cabecera-carrito h3 {
+        font-size: 1.2rem;
+    }
+    .pie-carrito {
+        font-size: 1.2rem;
+    }
+    .eliminar-producto {
+        font-size: 1.2rem;
+    }
+    .boton-checkout {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}
+
+/* Pantallas medianas (tablets), entre 500px y 800px */
+@media (max-width: 800px) {
+    .carrito-compra {
+        width: 80%;
+    }
+    .cabecera-carrito h3 {
+        font-size: 1.4rem;
+    }
+    .pie-carrito {
+        font-size: 1.4rem;
+    }
+    .eliminar-producto {
+        font-size: 1.4rem;
+    }
+    .boton-checkout {
+        font-size: 1.2rem;
+    }
 }
