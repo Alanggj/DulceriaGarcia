@@ -153,9 +153,10 @@
   z-index: 9999; /* Asegúrate de que esté en el frente */
   background-color: white; /* Fondo blanco para mejor visibilidad */
   padding: 20px; /* Espacio interno */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  left: 2%;
+  box-shadow: 0 0 10px rgba(203, 14, 124, 0.5); /* Sombra */
   border-radius: 10px; /* Bordes redondeados */
-  text-align: center; /* Centrar texto */
+  text-align:left; /* Centrar texto */
 }
 
 .flex {
