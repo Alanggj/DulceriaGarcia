@@ -22,6 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
             actualizarCarrito(carrito);
         });
     });
+
+    // Evento para cerrar el carrito
+    document.getElementById('cerrar-carrito').addEventListener('click', () => {
+        document.querySelector('.carrito-compra').classList.remove('mostrar');
+    });
 });
 
 function actualizarCarrito(carrito) {
@@ -29,14 +34,37 @@ function actualizarCarrito(carrito) {
     itemsCarrito.innerHTML = ''; // Limpiar el contenido actual
 
     let subtotal = 0;
-    carrito.forEach(producto => {
+    carrito.forEach((producto, index) => {
         const item = document.createElement('div');
         item.classList.add('item-carrito');
-        item.innerHTML = `<p>${producto.nombre} - $${producto.precio.toFixed(2)}</p>`;
+        item.innerHTML = `
+            <p>${producto.nombre} - $${producto.precio.toFixed(2)}</p>
+            <button class="eliminar-producto" data-index="${index}">X</button>
+        `;
         itemsCarrito.appendChild(item);
         subtotal += producto.precio;
     });
 
     // Actualizar el subtotal
     document.getElementById('total-carrito').innerText = `${subtotal.toFixed(2)}$`;
+
+    // Añadir el evento de eliminar a cada botón "X"
+    document.querySelectorAll('.eliminar-producto').forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.stopPropagation(); // Evita que el evento de clic se propague al contenedor
+            const index = e.target.getAttribute('data-index');
+            eliminarProducto(carrito, index);
+        });
+    });
+}
+
+function eliminarProducto(carrito, index) {
+    // Eliminar el producto del carrito
+    carrito.splice(index, 1);
+
+    // Guardar el carrito actualizado en localStorage
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+
+    // Actualizar la vista del carrito
+    actualizarCarrito(carrito);
 }
