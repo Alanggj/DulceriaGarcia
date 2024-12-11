@@ -134,3 +134,100 @@
 }
 
 
+/* From Uiverse.io by kennyotsu */ 
+.notifications-container {
+  width: 320px;
+  height: auto;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.notifications-container .success {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Fijo en la pantalla */
+
+ /* Centrar la notificación */
+  z-index: 9999; /* Asegúrate de que esté en el frente */
+  background-color: white; /* Fondo blanco para mejor visibilidad */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  border-radius: 10px; /* Bordes redondeados */
+  text-align: center; /* Centrar texto */
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.success {
+  padding: 1rem;
+  border-radius: 0.375rem;
+  background-color: rgb(240 253 244);
+}
+
+.succes-svg {
+  color: rgb(74 222 128);
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.success-prompt-wrap {
+  margin-left: 0.75rem;
+}
+
+.success-prompt-heading {
+  font-weight: bold;
+  color: #ff0295
+}
+
+.success-prompt-prompt {
+  margin-top: 0.5rem;
+  color: #ff0295
+}
+
+.success-button-container {
+  display: flex;
+  margin-top: 0.875rem;
+  margin-bottom: -0.375rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.success-button-main {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #ECFDF5;
+  color: #ff0295;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  border-radius: 0.375rem;
+  border: none;
+}
+
+.success-button-main:hover {
+  background-color: #D1FAE5;
+}
+
+.success-button-secondary {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: 0.75rem;
+  background-color: #ECFDF5;
+  color: #065F46;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0.375rem;
+  border: none;
+}
