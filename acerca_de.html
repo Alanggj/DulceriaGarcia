@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styles_header_footer.css">
-    <link rel="stylesheet" href="css/styles_inicio.css">
     <link rel="stylesheet" href="CSS/styles_acerca.css">
     <link rel="stylesheet" href="css/carrito_compra.css">
 
@@ -24,6 +23,7 @@
 </head>
 
 <body>
+
     <header class="header">
         <div class="container">
             <div class="btn-menu">
@@ -32,51 +32,133 @@
             <div class="logito">
                 <h2>DULCERÍA <a href="index.html"><img src="img/logo.png"></a> GARCÍA</h2>
             </div>
+            <div class="carrito">
+                <a href="comprar.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart"
+                        width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </header>
-    <div class="h1">
-        <h1>Acerca De</h1>
 
-        <div class="text1">
-            <p>>>>Somos una dulcería familiar con más de 10 años de tradición</p>
+    <div id="carrito-compra" class="carrito-compra">
+        <div class="cabecera-carrito">
+            <h3>CARRITO DE COMPRA</h3>
+            <span>
+                <button id="cerrar-carrito" aria-label="Cerrar carrito" class="cerrar-ventana"
+                    style="background: none; border: none; cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="32"
+                        height="32" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M18 6l-12 12" />
+                        <path d="M6 6l12 12" />
+                    </svg>
+                </button>
+            </span>
+
+        </div>
+        <div class="tab-carrito">
+        </div>
+
+        <div class="partebaja">
+
+            <hr class="linea-delgada-gris">
+            <div class="items-carrito"></div>
+            <div class="pie-carrito">
+                <div class="total-importe">
+                    <h2 class="subtitulo">Subtotal</h2>
+                    <h4 id="total-carrito">0.00$</h4>
+                </div>
+                <div class="boton-carrito">
+                    <form action="/create-checkout-session" method="POST">
+
+                        <button type="submit" class="boton-checkout" id="boton-checkout">Comprar!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="h1">
+    <div class="capa"></div>
+
+
+    <main class="contenedor"> 
+        <h1>ACERCA DE</h1>
+        <div class="acercaDe"> 
+            <div class="acercaDe_contenido"> 
+                <br>
+                <br>
+                <p>Somos una dulcería familiar con una tradición que se ha ido construyendo y fortaleciendo a lo largo de más de 10 años. 
+                    Desde nuestros inicios, hemos estado comprometidos a endulzar los momentos más especiales de nuestros clientes, 
+                    brindando no solo productos de calidad, sino también una experiencia llena de calidez y atención personalizada, 
+                    cualidades que solo una familia puede ofrecer.</p>
+                    <br>
+                 <p>En nuestra tienda, encontrarás una amplia variedad de dulces típicos que evocan recuerdos y emociones de nuestra cultura, 
+                    además de una gran selección de piñatas y accesorios para fiesta. Cada uno de nuestros productos está pensado para hacer 
+                    de tus celebraciones momentos verdaderamente inolvidables.</p>
+                   <br> 
+                 <p>Nos enorgullece ser parte de tus festividades, aportando ese toque de dulzura y alegría que hace la diferencia. 
+                    Creemos en la importancia de mantener vivas las tradiciones, y por eso nos esforzamos cada día para ofrecerte lo mejor, 
+                    asegurando que cada visita a nuestra dulcería sea una experiencia llena de satisfacción y felicidad.</p>
+                    <br>
+                    <!--<h3>Gracias por confiar en nosotros y ser parte de nuestra historia. Continuaremos trabajando con dedicación y amor para seguir endulzando tus momentos más especiales.</h3> !-->
+            </div>
+            <img class="acercaDe_imagen" src="img/acercaDe/imagen.png" alt="imagen acercaDe"> 
             
         </div>
+    </main> 
 
-        <div class="slider-box">
-            <ul>
-                <li>
-                    <img src="img/AcercaDe/imagen_1.jpg" alt="" class="imagen">
-                </li>
-                <li>
-                    <img src="img/AcercaDe/imagen_2.jpg" alt="" class="imagen">
-                </li>
-                <li>
-                    <img src="img/AcercaDe/imagen_3.jpg" alt="" class="imagen">
-                </li>
-                <li>
-                    <img src="img/AcercaDe/imagen_4.jpg" alt="" class="imagen">
-                </li>
-                
-            </ul>
+    <section class="contenedor hist">
+        <h3 class="valores_title">¡Haznos parte de tus momentos y descubre por qué somos tu mejor opción!</h2> 
+        <br>
+        <br>
+        <h5 class="bloque_titulo">Valores</h5>
+        <div class="bloques"> 
+            <div class="bloque"> 
+                <div class="bloque_capa">
+                <img class="bloque_imagen" src="img/acercaDe/calidad.png" alt="Nuestros valores"> 
+                <h4 class="bloque_titulo">Calidad</h4>
+                <p>Nos comprometemos a ofrecer productos y servicios de la más alta calidad, superando las expectativas de nuestros clientes y garantizando su satisfacción.</p> 
+                <br>
+                </div>
+            </div>
+            <div class="bloque"> 
+                <div class="bloque_capa">
+                <img class="bloque_imagen" src="img/acercaDe/responsabilidad.png" alt="Nuestros valores"> 
+                <h4 class="bloque_titulo">Responsabilidad</h3> 
+                <p>Al actuar con responsabilidad, mejoramos la confianza de nuestros clientes y proveedores, asegurando que cada visita y cada compra sean experiencias positivas y satisfactorias.</p>
+            </div> 
+            </div>
+            <div class="bloque"> 
+                <div class="bloque_capa">
+                <img class="bloque_imagen" src="img/acercaDe/cooperar.png" alt="Porque comprar con nosotros"> 
+                <h4 class="bloque_titulo">Compromiso con el cliente</h3>
+                <p>Estamos constantemente buscando maneras de mejorar nuestros productos y servicios para ofrecer siempre lo mejor a nuestros clientes. Ser comprometidos nos permite fortalecer nuestra dulcería,
+                     creando relaciones duraderas y continuando endulzando los momentos más especiales de nuestros clientes.</p>
+            </div>  
+            </div>
+            <div class="bloque"> 
+                <div class="bloque_capa">
+                <img class="bloque_imagen" src="img/acercaDe/respeto.png" alt="Porque comprar con nosotros"> 
+                <h4 class="bloque_titulo">Respeto</h3>
+                <p>Fomentar un ambiente de trabajo óptimo, incrementar la satisfacción y la productividad de los empleados, fortalecer las relaciones con los clientes y mejorar la reputación 
+                    del negocio contribuye al éxito y crecimiento sostenido</p>
+            </div>
+            </div>
         </div>
+    </section>
 
-        <div class="text2">
-            <p>La familia García estamos comprometidos a endulzar los momentos especiales de nuestros clientes. Ofrecemos una amplia variedad de dulces típicos, piñatas, y accesorios para fiesta, 
-                siempre con la calidez y atención que solo una familia puede brindar.</p>
 
-            <p>Desde el año 2013, tomamos la decisión de establecer este negocio como una oportunidad para crecer como familia. El camino no ha sido fácil, pues bien dicen que emprender un negocio 
-                es una tarea que requiere tiempo y dedicación.</p>
-        </div>
-
-    <div class="text2">
-        <h3><br>Valores</br></h3>
-        <p>Porque la filosofía de una empresa no solo define su identidad y posición en el mercado, sino que también influye en el valor que adjudica a sus productos.</p>
-
-                <br>¡Gracias por ser parte de nuestra historia!.</br></p>
-    </div>
-
-    </div>
-    <div class="capa"></div>
 
     <input type="checkbox" id="btn-menu">
     <div class="container-menu">
