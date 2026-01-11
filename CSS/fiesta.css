@@ -1,0 +1,317 @@
+/*:root {
+    --blanco: #FFFFFF;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --oscuro: #212121;
+    --amarillo: #FFC107;
+    --azul: #0097A7;
+    --gris: #757575;
+    --gris-claro: #DFE9F3;
+}*/
+
+:root{
+    --fondo: #ffffff;
+    --ubiacion: #B7D6B7; 
+    --rosa:#f81c9c;
+    --secundario: #0097A7;
+    --negro: #000000;
+  }
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+.servicios,
+.navegacion-principal,
+.formulario{
+    scroll-snap-stop: always;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding:0;
+
+}
+
+body2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,h2,h3 {
+    text-align: center;
+}
+
+/* utilidades */
+
+.w-sm-100 {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .w-sm-100 {
+        width: auto;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.alinear-derecha {
+    justify-content: flex-end;
+}
+
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1rem;
+    }
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3 {
+    color: var(--secundario);
+    font-weight: normal;
+}
+
+.servicio p {
+    line-height: 2;
+    text-align: center;
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.boton {
+    background-color: var(--rosa);
+    color: var(--fondo);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+@media (min-width: 768px) {
+  .boton {
+    width: auto;
+  }
+}
+.boton:hover {
+    cursor: pointer;
+}
+.contenido-hero {
+    position: absolute;
+    background-color: rgba( 0,0,0, .7 ); 
+    background-color: rgb( 0 0 0 / 70% );
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p { 
+    color: var(--fondo);
+}
+.contenido-hero .ubicacion {
+    display: flex;
+    align-items: flex-end;
+}
+
+.sombra {
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--negro);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.formulario {
+    background-color: var(--rosa);
+    width: min(60rem,100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.formulario fieldset {
+    border: none;
+}
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--rosa);
+}
+@media (min-width: 768px) {
+    .contenedor-campos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+
+    }
+
+    .campo:nth-child(3),
+    .campo:nth-child(4) {
+        grid-column: 1 / 3;
+    }
+}
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    color: var(--negro);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.campo textarea {
+    height: 20rem;
+}
+
+.input-text {
+    width: 100%;
+    border: 2px solid var(--rosa); /* Grosor, estilo y color del borde */
+    padding: 1.5rem;
+    border-radius: .5rem;
+
+}
+
+.footer {
+    text-align: center;
+}
+
+.formulario{
+    background-color: var(--gris);
+    width: min( 60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+.enviar-opciones {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+/* Estilo para el dropdown */
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.dropdown-content.mostrar {
+    display: block;
+}
+
+.dropdown-option {
+    display: block;
+    background: none;
+    border: none;
+    padding: 8px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-option:hover {
+    background-color: #ddd;
+}
+
+/* Botón principal */
+.dropdown-button {
+    background-color: #f81c9c; /* Color rosa */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block; /* Ajustable según necesidad */
+    position: relative; /* Para personalizar su ubicación */
+}
+
+/* Botón al pasar el mouse */
+.dropdown-button:hover {
+    background-color: #ff85c4; /* Rosa más claro */
+}
+
+.dropdown-button {
+    margin-top: 5px;
+    top: 20px; /* Ajusta el valor para moverlo verticalmente */
+    left: 15px; /* Ajusta el valor para moverlo horizontalmente */
+}

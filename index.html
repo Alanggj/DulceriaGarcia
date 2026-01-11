@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulcería García</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_header_footer.css">
+    <link rel="stylesheet" href="css/styles_inicio.css">
+    <link rel="stylesheet" href="css/carrito_compra.css">
+    <!--Funtes_Utilizadas-->
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    <script src="js/carrito.js" defer></script>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logito">
+                <h2>DULCERÍA <a href="index.html"><img src="img/logo.png"></a> GARCÍA</h2>
+            </div>
+            <div class="carrito">
+                <a href="comprar.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart"
+                        width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div id="carrito-compra" class="carrito-compra">
+        <div class="cabecera-carrito">
+            <h3>CARRITO DE COMPRA</h3>
+            <span>
+                <button id="cerrar-carrito" aria-label="Cerrar carrito" class="cerrar-ventana"
+                    style="background: none; border: none; cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="32"
+                        height="32" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M18 6l-12 12" />
+                        <path d="M6 6l12 12" />
+                    </svg>
+                </button>
+            </span>
+
+        </div>
+        <div class="tab-carrito">
+        </div>
+
+        <div class="partebaja">
+
+            <hr class="linea-delgada-gris">
+            <div class="items-carrito"></div>
+            <div class="pie-carrito">
+                <div class="total-importe">
+                    <h2 class="subtitulo">Subtotal</h2>
+                    <h4 id="total-carrito">0.00$</h4>
+                </div>
+                <div class="boton-carrito">
+                    <a href="comprar.html">
+                        <button type="submit" class="boton-checkout" id="boton-checkout">Comprar!</button>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="capa"></div>
+
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="index.html">INICIO</a>
+                <a href="botana.html">BOTANAS</a>
+                <a href="desechable.html">DESECHABLE</a>
+                <a href="fiesta.html">FIESTAS</a>
+                <a href="dulces.html">DULCES</a>
+                <a href="acerca_de.html">ACERCA DE...</a>
+            </nav>
+            <label class="tachita" for="btn-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="32" height="32"
+                    viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                </svg>
+            </label>
+            
+            <div class="preguntasf">
+                <a href="preguntas_frec.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" width="50" height="50" stroke-width="1.75"> <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path> <path d="M12 8v4"></path> <path d="M12 16h.01"></path> </svg> 
+                </a>    
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor-vendimia">
+
+        <div class="productos">
+            <a href="botana.html">
+                <div class="producto">
+                    <img src="img/botanas.png" alt="botana">
+                    <h1>BOTANA</h1>
+                </div>
+            </a>
+            <a href="desechable.html">
+                <div class="producto">
+                    <img src="img/desechables.png" alt="desechable">
+                    <h1>DESECHABLE</h1>
+                </div>
+            </a>
+
+            <a href="fiesta.html">
+                <div class="producto">
+                    <img src="img/piñata.png" alt="piñata">
+                    <h1>FIESTA</h1>
+                </div>
+            </a>
+
+            <a href="dulces.html">
+                <div class="producto">
+                    <img src="img/dulces.jpg" alt="dulces">
+                    <h1>DULCES</h1>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <section class="ubicacion">
+        <p class="titulo">Nos ubicamos en</p>
+        <div id="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.626982182902!2d-102.25604519999999!3d21.9104354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ee2838fd8ecf%3A0xf7cc9e983e4bb194!2zRHVsY2Vyw61hIEdhcmPDrWE!5e0!3m2!1ses-419!2smx!4v1728320892764!5m2!1ses-419!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="boton-r">
+            <a href="https://maps.app.goo.gl/jGNjhYKAjbCdN5hr8" target="_blank" ><button class="boton-ubi">UBICACIÓN<Nav></Nav></button></a>
+        </div>
+    </section>
+ <!-- Footer -->
+
+
+ 	 <!-- Footer -->
+      <footer class="contenedor_footer">
+        <div class="logo">
+            <img src="img/logoE.png" alt="Logo dulceria">
+            <h2>Direccion: </h2>
+            <p>Sierra de San Bernardino # 214</p>
+            <p>Cumbres, 20175 Aguascalientes, Ags.</p>
+
+        </div>
+        <div class="derechos">
+            <p>Dulceria Garcia.</p>
+            <p>Todos los derechos reservados</p>
+
+        </div>
+        
+        <div class="redes2">
+            <a href="preguntas_frec.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" width="60" height="50" stroke-width="1.75"> <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path> <path d="M12 8v4"></path> <path d="M12 16h.01"></path> </svg> 
+            </a>   
+                <a href="mailto:guilleldelunasanchez@gmail.com" target="_blank" aria-label="Correo electrónico">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="60" height="50" stroke-width="2"> <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path> <path d="M3 7l9 6l9 -6"></path> </svg> 
+                </a>
+            
+
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/4491915358" target="_blank" aria-label="WhatsApp">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="60"
+                    height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path
+                        d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                </svg>
+            </a>
+
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/share/18j1ugXpBQaHa6aS/" target="_blank" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="50"
+                    height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>
+        </div>
+        <div class="redes">
+            <h2>Contactanos por:</h2>
+            <a href="https://wa.me/4491915358" target="_blank" aria-label="WhatsApp">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path
+                        d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                </svg>
+            </a>
+
+            <!-- Enlace de Facebook -->
+            <a href="https://www.facebook.com/share/18j1ugXpBQaHa6aS/" target="_blank" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+
+    
+    <script>
+        const cartButton = document.querySelector('.carrito a'); 
+        const cart = document.getElementById('carrito-compra'); 
+        const closeCart = document.getElementById('cerrar-carrito');
+    
+        cartButton.addEventListener('click', (e) => {
+            e.preventDefault(); 
+            cart.classList.toggle('mostrar'); 
+        });
+    
+        closeCart.addEventListener('click', () => {
+            cart.classList.remove('mostrar'); 
+        });
+    
+        window.addEventListener('click', (e) => {
+            if (!cart.contains(e.target) && !cartButton.contains(e.target)) {
+                cart.classList.remove('mostrar'); 
+            }
+        });
+    </script>
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,35 @@
+:root{
+  --fondo: #ffffff;
+  --ubiacion: #B7D6B7; 
+  --rosa:#f81c9c;
+}
+*{
+   
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+body{
+	font-family: "Lilita One", sans-serif;
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+    background-color: var(--fondo);
+}
+
+.capa{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
+
+.h1{
+	text-align: center;
+}
+
+.text{
+	font-size: 1.8rem;
+}

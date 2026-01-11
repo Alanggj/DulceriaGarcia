@@ -1,0 +1,234 @@
+.contenedorjefe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: 0;
+ 
+}
+
+.items-carrito {
+  display: none;
+}
+
+.visa-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 600px;
+    height: 380px;
+    background-image: radial-gradient(
+      circle 897px at 9% 80.3%,
+      rgba(55, 60, 245, 1) 0%,
+      rgba(234, 161, 15, 0.9) 100.2%
+    );
+    border-radius: 10px;
+    padding: 20px;
+    font-family: "Lilita One", sans-serif;
+    position: relative;
+    gap: 15px;
+  }
+  .logoContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 18px;
+  }
+  .svgLogo {
+    height: 40px;
+    width: auto;
+  }
+  .inputstyle::placeholder {
+    color: #ffffff;
+  }
+  .inputstyle {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    caret-color: red;
+    font-size: 13px;
+    height: 25px;
+    letter-spacing: 1.5px;
+  }
+  .number-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  #cardNumber {
+    width: 100%;
+    height: 50px;
+  }
+  .name-date-cvv-container {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    gap: 10px;
+  }
+  .name-wrapper {
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .expiry-wrapper,
+  .cvv-wrapper {
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .cvv-wrapper {
+    width: 10%;
+  }
+  #expiry,
+  #cvv {
+    width: 100%;
+  }
+  .input-label {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    color: #e2e2e2;
+    width: 100%;
+  }
+  
+
+  
+
+  .pie-carrito .boton-carrito {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.boton-checkout {
+    background-color: #f635b6; 
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-checkout:hover {
+    background-color: #cf27c1; 
+}
+
+.subtitulo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#total-carrito {
+    color: #ff0295;
+    text-align: center;
+}
+
+
+/* From Uiverse.io by kennyotsu */ 
+.notifications-container {
+  width: 320px;
+  height: auto;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.notifications-container .success {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Fijo en la pantalla */
+
+ /* Centrar la notificación */
+  z-index: 9999; /* Asegúrate de que esté en el frente */
+  background-color: white; /* Fondo blanco para mejor visibilidad */
+  padding: 20px; /* Espacio interno */
+  left: 2%;
+  box-shadow: 0 0 10px rgba(203, 14, 124, 0.5); /* Sombra */
+  border-radius: 10px; /* Bordes redondeados */
+  text-align:left; /* Centrar texto */
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.success {
+  padding: 1rem;
+  border-radius: 0.375rem;
+  background-color: rgb(240 253 244);
+}
+
+.succes-svg {
+  color: rgb(74 222 128);
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.success-prompt-wrap {
+  margin-left: 0.75rem;
+}
+
+.success-prompt-heading {
+  font-weight: bold;
+  color: #ff0295
+}
+
+.success-prompt-prompt {
+  margin-top: 0.5rem;
+  color: #ff0295
+}
+
+.success-button-container {
+  display: flex;
+  margin-top: 0.875rem;
+  margin-bottom: -0.375rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.success-button-main {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #ECFDF5;
+  color: #ff0295;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  border-radius: 0.375rem;
+  border: none;
+}
+
+.success-button-main:hover {
+  background-color: #D1FAE5;
+}
+
+.success-button-secondary {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: 0.75rem;
+  background-color: #ECFDF5;
+  color: #065F46;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0.375rem;
+  border: none;
+}

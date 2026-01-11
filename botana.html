@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desechable</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_header_footer.css">
+    <link rel="stylesheet" href="css/styles_inicio.css">
+    <link rel="stylesheet" href="css/styles_tarjetas.css">
+    <link rel="stylesheet" href="css/busqueda.css">
+    <link rel="stylesheet" href="css/Filtro.css">
+    <link rel="stylesheet" href="css/carrito_compra.css">
+    <link rel="stylesheet" href="CSS/alerta.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="js/productos.js" defer></script>
+    <script src="js/busqueda.js" defer></script>
+    <script src="js/carrito.js" defer></script>
+    <script src="js/carrito.js" defer></script>
+    <script src="js/alerta.js" defer></script>
+
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logito">
+                <h2>DULCERÍA <a href="index.html"><img src="img/logo.png"></a> GARCÍA</h2>
+            </div>
+        </div>
+            <div class="container2">
+                <div class="busqueda">
+                    <div class="search">
+                        <input type="text" id="find" placeholder="Buscar en Tienda" style="width: 0;" onkeyup="search()" />
+                        <i class="fas fa-search" id="search-icon" onclick="toggleSearch()"></i>
+                    </div>
+                </div>
+                <div class="carrito">
+                    <a href="comprar.html">
+    
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart"
+                            width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M17 17h-11v-14h-2" />
+                            <path d="M6 5l14 1l-1 7h-13" />
+                        </svg>
+                    </a>
+                </div> 
+         </div>
+    </header>
+
+
+    <div id="carrito-compra" class="carrito-compra">
+        <div class="cabecera-carrito">
+            <h3>CARRITO DE COMPRA</h3>
+            <span>
+                <button id="cerrar-carrito" aria-label="Cerrar carrito" class="cerrar-ventana" style="background: none; border: none; cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="32" height="32" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M18 6l-12 12" />
+                        <path d="M6 6l12 12" />
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <div class="tab-carrito"></div>
+        <hr class="linea-delgada-gris">
+        <div class="items-carrito"></div>
+        <div class="pie-carrito">
+            <div class="total-importe">
+                <h2 class="subtitulo">Subtotal</h2>
+                <h4 id="total-carrito">0.00$</h4>
+            </div>
+            <div class="boton-carrito">
+                <a href="comprar.html">
+                    <button type="submit" class="boton-checkout" id="boton-checkout">Comprar!</button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <h1>BOTANA</h1>
+    <div class="capa"></div>
+
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="index.html">INICIO</a>
+                <a href="botana.html">BOTANAS</a>
+                <a href="desechable.html">DESECHABLE</a>
+                <a href="fiesta.html">FIESTAS</a>
+                <a href="dulces.html">DULCES</a>
+                <a href="acerca_de.html">ACERCA DE...</a>
+            </nav>
+            <label class="tachita" for="btn-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="32" height="32"
+                    viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                </svg>
+            </label>
+            <div class="preguntasf">
+                <a href="preguntas_frec.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" width="50" height="50" stroke-width="1.75"> <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path> <path d="M12 8v4"></path> <path d="M12 16h.01"></path> </svg> 
+                </a>    
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor de productos -->
+    <div class="contenedor_producto">
+        <div class="filter-container">
+            <button class="filter-btn" data-category="all">Mostrar Todo</button>
+            <button class="filter-btn" data-category="categoria1">Salsa</button>
+            <button class="filter-btn" data-category="categoria2">Cacahuates</button>
+            <button class="filter-btn" data-category="categoria3">Cheetos</button>
+            <button class="filter-btn" data-category="categoria4">Frituras</button>
+            <button class="filter-btn" data-category="categoria5">Papas</button>
+            <button class="filter-btn" data-category="categoria6">Legumbres</button>
+            <button class="filter-btn" data-category="categoria7">Duros</button>
+        </div>
+        
+        <div class="productos_d">
+            <!--SALSA-->
+            <div class="product" data-name="p-1" data-category="categoria1">
+                <img src="img/Botana/Salsa/Chilerito.jpg" alt="">
+                <h3>El Chilerito</h3>
+                <h3> 355 ml</h3>
+                <div class="price">$25.00</div>
+            </div>
+            <div class="product" data-name="p-2" data-category="categoria1">
+                <img src="img/Botana/Salsa/porfis355.png" alt="">
+                <h3>Salsa Porfis</h3>
+                <h3> 355 ml</h3>
+                <div class="price">$23.00</div>
+            </div>
+            <div class="product" data-name="p-3" data-category="categoria1">
+                <img src="img/Botana/Salsa/sabozita500.png" alt="">
+                <h3>Sabrozita</h3>
+                <h3>500g</h3>
+                <div class="price">$18.00</div>
+            </div>
+            <div class="product" data-name="p-4" data-category="categoria1">
+                <img src="img/Botana/Salsa/Donvasco500.webp" alt="">
+                <h3>Don Vasco</h3>
+                <h3>500g</h3>
+                <div class="price">$18.00</div>
+            </div>
+            <div class="product" data-name="p-5" data-category="categoria1">
+                <img src="img/Botana/Salsa/sabrozita1.png" alt="">
+                <h3>Sabrozita</h3>
+                <h3> 1kg </h3>
+                <div class="price">$28.00</div>
+            </div>
+            <div class="product" data-name="p-6" data-category="categoria1">
+                <img src="img/Botana/Salsa/Donvasco1Kg.webp" alt="">
+                <h3>Don Vasco</h3>
+                <h3>1kg</h3>
+                <div class="price">$28.00</div>
+            </div>
+            <div class="product" data-name="p-7" data-category="categoria1">
+                <img src="img/Botana/Salsa/Yahualica.webp" alt="">
+                <h3>Yahualica</h3>
+                <h3> 1kg</h3>
+                <div class="price">$33.00</div>
+            </div>
+            <div class="product" data-name="p-8"data-category="categoria1">
+                <img src="img/Botana/Salsa/Valentina.webp" alt="">
+                <h3>Valentina</h3>
+                <h3>1Kg</h3>
+                <div class="price">$33.00</div>
+            </div>
+            <div class="product" data-name="p-9"data-category="categoria1">
+                <img src="img/Botana/Salsa/Donvasco1_5.jpg" alt="">
+                <h3>Don Vasco</h3>
+                <h3>1.5Kg</h3>
+                <div class="price">$36.00</div>
+            </div>
+            <div class="product" data-name="p-10"data-category="categoria1">
+                <img src="img/Botana/Salsa/Sabrozita1_5.webp" alt="">
+                <h3>Sabrozita</h3>
+                <h3>1.5Kg</h3>
+                <div class="price">$36.00</div>
+            </div>
+            <!--********BOTANA************-->
+            <!--AProza-->
+            <div class="product" data-name="p-11" data-category="categoria3" >
+                <img src="img/Botana/Botana/BalonA.png" alt="">
+                <h3>Balón</h3>
+                <h3>450gr</h3>
+                <div class="price">$45.00</div>
+            </div>
+            <div class="product" data-name="p-12" data-category="categoria3">
+                <img src="img/Botana/Botana/Chipotle.jpeg" alt="">
+                <h3>Chipotle</h3>
+                <h3>450gr</h3>
+                <div class="price">$45.00</div>
+            </div>
+            <div class="product" data-name="p-13" data-category="categoria3">
+                <img src="img/Botana/Botana/Chelimon.jpeg" alt="">
+                <h3>Chelimón</h3>
+                <h3>450gr</h3>
+                <div class="price">$45.00</div>
+            </div>
+            <div class="product" data-name="p-14"data-category="categoria3">
+                <img src="img/Botana/Botana/cheddar.jpeg" alt="">
+                <h3>Queso cheddar</h3>
+                <h3>450gr</h3>
+                <div class="price">$45.00</div>
+            </div>
+            <div class="product" data-name="p-15" data-category="categoria3">
+                <img src="img/Botana/Botana/Doblequeso.jpeg" alt="">
+                <h3>Doble queso</h3>
+                <h3>450gr</h3>
+                <div class="price">$45.00</div>
+            </div>
+            <div class="product" data-name="p-16" data-category="categoria3">
+                <img src="img/Botana/Botana/troncheseeFuego.jpeg" alt="">
+                <h3>Troncheese Fuego Rojo</h3>
+                <h3>750gr</h3>
+                <div class="price">$79.00</div>
+            </div>
+            <div class="product" data-name="p-17" data-category="categoria3">
+                <img src="img/Botana/Botana/troncheeseCheddar.png" alt="">
+                <h3>Troncheese Cheddar</h3>
+                <h3>750gr</h3>
+                <div class="price">$79.00</div>
+            </div>
+            <div class="product" data-name="p-18" data-category="categoria3">
+                <img src="img/Botana/Botana/troncheseFuegoAzul.jpeg" alt="">
+                <h3>Troncheese Fuego Azul</h3>
+                <h3>750gr</h3>
+                <div class="price">$79.00</div>
+            </div>
+            <!--Chettos-->
+           <!--<div class="product" data-name="p-19">
+                <img src="img/Botana/Botana/" alt="">
+                <h3>Chetto Delgado de Queso</h3>
+                <h3>500gr</h3>
+                <div class="price">$42.00</div>
+            </div>-->
+            <div class="product" data-name="p-20" data-category="categoria3">
+                <img src="img/Botana/Botana/cheetosdelgadosrojos.jpeg" alt="">
+                <h3>Chetto Delgado rojo</h3>
+                <h3>500gr</h3>
+                <div class="price">$42.00</div>
+            </div>
+            <div class="product" data-name="p-21" data-category="categoria3">
+                <img src="img/Botana/Botana/Bolita.jpeg" alt="">
+                <h3>Chetto Bola Chile</h3>
+                <h3>500gr</h3>
+                <div class="price">$42.00</div>
+            </div>
+            <div class="product" data-name="p-22" data-category="categoria3">
+                <img src="img/Botana/Botana/garra.jpeg" alt="">
+                <h3>Chetto Garra</h3>
+                <h3>500gr</h3>
+                <div class="price">$42.00</div>
+            </div>
+            <div class="product" data-name="p-23" data-category="categoria3">
+                <img src="img/Botana/Botana/chetoGruesoQueso.jpeg" alt="">
+                <h3>Chetto Grueso de queso</h3>
+                <h3>500gr</h3>
+                <div class="price">$42.00</div>
+            </div>
+            <div class="product" data-name="p-24"data-category="categoria3">
+                <img src="img/Botana/Botana/colores.png" alt="">
+                <h3>Chetto Colores</h3>
+                <h3>500gr</h3>
+                <div class="price">$42.00</div>
+            </div>
+            <!--Fritura-->
+            <div class="product" data-name="p-25" data-category="categoria4">
+                <img src="img/Botana/Botana/RIN.jpeg" alt="">
+                <h3>Fritura Rin Grande</h3>
+                <h3>450gr</h3>
+                <div class="price">$30.00</div>
+            </div>
+            <div class="product" data-name="p-26" data-category="categoria4">
+                <img src="img/Botana/Botana/trenza.jpeg" alt="">
+                <h3>Fritura Trenza Chile</h3>
+                <h3>450gr</h3>
+                <div class="price">$30.00</div>
+            </div>
+            <div class="product" data-name="p-27" data-category="categoria4" >
+                <img src="img/Botana/Botana/Tuerca.jpeg" alt="">
+                <h3>Fritura Tuerca</h3>
+                <h3>450gr</h3>
+                <div class="price">$30.00</div>
+            </div>
+            <div class="product" data-name="p-28" data-category="categoria4">
+                <img src="img/Botana/Botana/Palitos.jpeg" alt="">
+                <h3>Fritura Palito</h3>
+                <h3>450gr</h3>
+                <div class="price">$30.00</div>
+            </div>
+            <div class="product" data-name="p-29" data-category="categoria4">
+                <img src="img/Botana/Botana/Tubos.jpeg" alt="">
+                <h3>Fritura Tubo</h3>
+                <h3>450gr</h3>
+                <div class="price">$30.00</div>
+            </div>
+            <div class="product" data-name="p-30" data-category="categoria4">
+                <img src="img/Botana/Botana/PalomitasSinqueso.jpeg" alt="">
+                <h3>Palomitas sin Queso</h3>
+                <h3>450gr</h3>
+                <div class="price">$33.00</div>
+            </div>
+            <div class="product" data-name="p-31"data-category="categoria4">
+                <img src="img/Botana/Botana/PalomitasQueso.jpeg" alt="">
+                <h3>Palomitas con Queso</h3>
+                <h3>450gr</h3>
+                <div class="price">$42.00</div>
+            </div>
+            <!--Papas-->
+            <div class="product" data-name="p-32" data-category="categoria5">
+                <img src="img/Botana/Botana/papas.jpeg" alt="">
+                <h3>Papa Natural</h3>
+                <h3>500gr</h3>
+                <div class="price">$95.00</div>
+            </div>
+            <div class="product" data-name="p-33" data-category="categoria5">
+                <img src="img/Botana/Botana/papas.jpeg" alt="">
+                <h3>Papa Natural</h3>
+                <h3>1Kg</h3>
+                <div class="price">$176.00</div>
+            </div>
+            <!-- DUROS blancos -->
+            <div class="product" data-name="p-34"data-category="categoria7">
+                <img src="img/Botana/Botana/DuroBlanco.png" alt="">
+                <h3>Duro Blanco</h3>
+                <h3>10 Piezas</h3>
+                <div class="price">$80.00</div>
+            </div>
+            <!-- <div class="product" data-name="p-35">
+                <img src="img/Botana/Botana/" alt="">
+                <h3>Duros Rojos</h3>
+                <h3>40 Piezas</h3>
+                <div class="price">$45.00</div>
+            </div> -->
+            <!--Cacahuates-->
+            <div class="product" data-name="p-36" data-category="categoria2">
+                <img src="img/Botana/Cacahuate/Cacahuatesqueso.png" alt="">
+                <h3>Cacahuates de Queso</h3>
+                <h3>1Kg</h3>
+                <div class="price">$78.00</div>
+            </div>
+            <div class="product" data-name="p-37" data-category="categoria2">
+                <img src="img/Botana/Cacahuate/CacahuateHotNuts.webp" alt="">
+                <h3>Cacahuates Hot Nuts</h3>
+                <h3>1Kg</h3>
+                <div class="price">$78.00</div>
+            </div>
+            <div class="product" data-name="p-38" data-category="categoria2">
+                <img src="img/Botana/Cacahuate/CacahuateHabanero.jpeg" alt="">
+                <h3>Cacahuates Habanero</h3>
+                <h3>1Kg</h3>
+                <div class="price">$78.00</div>
+            </div>
+            <div class="product" data-name="p-39" data-category="categoria2">
+                <img src="img/Botana/Cacahuate/CacahuateSalado.webp" alt="">
+                <h3>Cacahuates Salados</h3>
+                <h3>1Kg</h3>
+                <div class="price">$78.00</div>
+            </div>
+            <div class="product" data-name="p-40" data-category="categoria2">
+                <img src="img/Botana/Cacahuate/CacahuateToreado.webp" alt="">
+                <h3>Cacahuates Toreados</h3>
+                <h3>1Kg</h3>
+                <div class="price">$78.00</div>
+            </div>
+            <div class="product" data-name="p-41" data-category="categoria2">
+                <img src="img/Botana/Cacahuate/CacahuateChile.png" alt="">
+                <h3>Cacahuates con chile</h3>
+                <h3>1Kg</h3>
+                <div class="price">$78.00</div>
+            </div>
+            <div class="product" data-name="p-42" data-category="categoria2">
+                <img src="img/Botana/Cacahuate/CacahuateJapones.webp" alt="">
+                <h3>Cacahuates Japones</h3>
+                <h3>1Kg</h3>
+                <div class="price">$78.00</div>
+            </div>
+            <div class="product" data-name="p-43" data-category="categoria2">
+                <img src="img/Botana/Cacahuate/CacahuateSurtido.jpeg" alt="">
+                <h3>Cacahuates Surtido</h3>
+                <h3>1Kg</h3>
+                <div class="price">$78.00</div>
+            </div>
+            <!--Extra-->
+            <div class="product" data-name="p-44" data-category="categoria6">
+                <img src="img/Botana/Cacahuate/Garbanzos.jpg" alt="">
+                <h3>Garbanzo</h3>
+                <h3>1Kg</h3>
+                <div class="price">$78.00</div>
+            </div>
+            <div class="product" data-name="p-45" data-category="categoria6">
+                <img src="img/Botana/Cacahuate/Chicharos.jpg" alt="">
+                <h3>Chicharo</h3>
+                <h3>1Kg</h3>
+                <div class="price">$78.00</div>
+            </div>
+            <div class="product" data-name="p-46" data-category="categoria6">
+                <img src="img/Botana/Cacahuate/Haba.jpg" alt="">
+                <h3>Haba</h3>
+                <h3>1Kg</h3>
+                <div class="price">$110.00</div>
+            </div>
+                     
+                                                           
+        </div> 
+
+    </div>
+
+    <!-- Vista previa de productos -->
+    <div class="products-preview">
+        <!--Salsa-->
+        <div class="preview" data-target="p-1">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Salsa/Chilerito.jpg" alt="">
+            <h3>El Chilerito</h3>
+            <p>Salsa mexicana picante de sabor chamoy, con un toque ácido y dulce, 355ml</p>
+            <span class="precio">$25.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-2">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Salsa/porfis355.png" alt="">
+            <h3>Salsa Porfis</h3>
+            <p>Salsa picante mexicana hecha a mano con chile 100%, 355ml</p>
+            <span class="precio">$23.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-3">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Salsa/sabozita500.png" alt="">
+            <h3>Sabrozita</h3>
+            <p> Salsa mexicana que se prepara con una mezcla de chiles y especias, 500ml</p>
+            <span class="precio">$18.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-4">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Salsa/Donvasco500.webp" alt="">
+            <h3>Don Vasco</h3>
+            <p> Salsa picante especiada, 500ml</p>
+            <span class="precio">$18.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-5">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Salsa/sabrozita1.png" alt="">
+            <h3>Sabrozita</h3>
+            <p> Salsa mexicana que se prepara con una mezcla de chiles y especias, 1Kg</p>
+            <span class="precio">$28.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-6">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Salsa/Donvasco1Kg.webp" alt="">
+            <h3>Don Vasco</h3>
+            <p> Salsa picante especiada, 1Kg</p>
+            <span class="precio">$28.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-7">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Salsa/Yahualica.webp" alt="">
+            <h3>Yahualica</h3>
+            <p> Salsa picante que se elabora con chile de árbol Yahualica, 1Kg</p>
+            <span class="precio">$33.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-8">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Salsa/Valentina.webp" alt="">
+            <h3>Valetina</h3>
+            <p> Salsa picante, 1Kg</p>
+            <span class="precio">$33.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-9">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Salsa/Donvasco1_5.jpg" alt="">
+            <h3>Don Vasco</h3>
+            <p> Salsa picante especiada, 1.5Kg</p>
+            <span class="precio">$36.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-10">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Salsa/Sabrozita1_5.webp" alt="">
+            <h3>Sabrozita</h3>
+            <p> Salsa mexicana que se prepara con una mezcla de chiles y especias, 1.5Kg</p>
+            <span class="precio">$36.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+         <!--********BOTANA************-->
+            <!--AProza-->
+         <div class="preview" data-target="p-11">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/BalonA.png" alt="">
+            <h3>Balón</h3>
+            <p>Esferas de clásico y combinado sabor chile-acidito,450g</p>
+            <span class="precio">$45.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-12">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/Chipotle.jpeg" alt="">
+            <h3>Chipotles</h3>
+            <p>Cheto Aproza Chipotle 450g</p>
+            <span class="precio">$45.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-13">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/Chelimon.jpeg" alt="">
+            <h3>Chelimón</h3>
+            <p>Aciditos cheetos de maíz inflado sabor limón 450g</p>
+            <span class="precio">$45.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-14">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/cheddar.jpeg" alt="">
+            <h3>Queso Cheddar</h3>
+            <p>Cheeto esponjada con sabor a queso cheddar, 450g</p>
+            <span class="precio">$45.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-15">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/Doblequeso.jpeg" alt="">
+            <h3>Doble queso</h3>
+            <p>Cheeto esponjada con sabor a queso, 450g</p>
+            <span class="precio">$45.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-16">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/troncheseeFuego.jpeg" alt="">
+            <h3>Troncheese Fuego Rojo</h3>
+            <p>Torciditos de harina de maíz, horneados con chile, 750g</p>
+            <span class="precio">$79.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-17">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/troncheeseCheddar.png" alt="">
+            <h3>Troncheese Cheddar</h3>
+            <p>Torciditos de harina de maíz, horneados con sabor a queso cheddar, 750g</p>
+            <span class="precio">$79.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-18">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/troncheseFuegoAzul.jpeg" alt="">
+            <h3>Troncheese Fuego Azul</h3>
+            <p>Torciditos de harina de maíz, horneados con chile, 750g</p>
+            <span class="precio">$79.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <!--Cheetos-->
+       /* <div class="preview" data-target="p-19">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/" alt="">
+            <h3>Chetto Delgado de Queso</h3>
+            <p>Cheetos de harina de maíz sabor a queso, 500g</p>
+            <span class="precio">$42.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>*/
+        <div class="preview" data-target="p-20">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/cheetosdelgadosrojos.jpeg" alt="">
+            <h3>Chetto Delgado Rojo</h3>
+            <p>Cheetos de harina de maíz con chile, 500g</p>
+            <span class="precio">$42.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-21">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/Bolita.jpeg" alt="">
+            <h3>Chetto Bola de chile</h3>
+            <p>Botana elaborada de maíz con sabor a queso y jalapeño, 500g</p>
+            <span class="precio">$42.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-22">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/garra.jpeg" alt="">
+            <h3>Chetto Garra</h3>
+            <p>Botana en forma de garra o colmillos, elaborada de maíz y con sabor a salsa picante, 500g</p>
+            <span class="precio">$42.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-23">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/chetoGruesoQueso.jpeg" alt="">
+            <h3>Chetto Grueso de queso</h3>
+            <p>Botana elaborada de maíz y con sabor a queso, 500g</p>
+            <span class="precio">$42.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-24">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/colores.png" alt="">
+            <h3>Chetto Colores</h3>
+            <p>Botana elaborada de maíz  500g</p>
+            <span class="precio">$42.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <!--Fritura-->
+        <div class="preview" data-target="p-25">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/RIN.jpeg" alt="">
+            <h3>Fritura Rin Grande</h3>
+            <p>Fritura de harina de trigo en forma de Rin  450g</p>
+            <span class="precio">$30.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-26">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/trenza.jpeg" alt="">
+            <h3>Fritura Trenza de Chile</h3>
+            <p>Fritura de harina de trigo en forma de trenza con chile  450g</p>
+            <span class="precio">$30.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-27">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/Tuerca.jpeg" alt="">
+            <h3>Fritura Tuerca</h3>
+            <p>Fritura de harina de trigo en forma de tuerca 450g</p>
+            <span class="precio">$30.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-28">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/Palitos.jpeg" alt="">
+            <h3>Fritura Palito</h3>
+            <p>Fritura de harina de trigo en forma de palito 450g</p>
+            <span class="precio">$30.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-29">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/Tubos.jpeg" alt="">
+            <h3>Fritura Tubo</h3>
+            <p>Fritura de harina de trigo en forma de tubo  450g</p>
+            <span class="precio">$30.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-30">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/PalomitasSinqueso.jpeg" alt="">
+            <h3>Palomitas sin queso</h3>
+            <p>palomitas de maíz que no contienen queso  450g</p>
+            <span class="precio">$33.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-31">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/PalomitasQueso.jpeg" alt="">
+            <h3>Palomitas con queso</h3>
+            <p>palomitas de maíz que con queso 450g</p>
+            <span class="precio">$42.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <!--Papa Natural-->
+        <div class="preview" data-target="p-32">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/papas.jpeg" alt="">
+            <h3>Papa Natural</h3>
+            <p>500g</p>
+            <span class="precio">$95.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-33">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/papas.jpeg" alt="">
+            <h3>Papa Natural</h3>
+            <p>1Kg</p>
+            <span class="precio">$176.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        Duros
+        <div class="preview" data-target="p-34">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/DuroBlanco.png" alt="">
+            <h3>Duro Blanco</h3>
+            <p> Botana mexicana popular hecha de trigo inflado, 10 piezas</p>
+            <span class="precio">$80.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-35">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Botana/" alt="">
+            <h3>Duros Rojos</h3>
+            <p> Botana mexicana popular hecha de trigo inflado, 10 piezas</p>
+            <span class="precio">$45.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <!--Cacahuates-->
+       
+        <div class="preview" data-target="p-36">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Cacahuate/Cacahuatesqueso.png" alt="">
+            <h3>Cacahuate de Queso</h3>
+            <p> Cacahuate cubierto de queso, 1Kg</p>
+            <span class="precio">$78.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-37">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Cacahuate/CacahuateHotNuts.webp" alt="">
+            <h3>Cacahuate Hot Nuts</h3>
+            <p> Cacahuate cubierto de chile, 1Kg</p>
+            <span class="precio">$78.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-38">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Cacahuate/CacahuateHabanero.jpeg" alt="">
+            <h3>Cacahuates Habanero</h3>
+            <p> Cacahuate cubierto de chile Habanero, 1Kg</p>
+            <span class="precio">$78.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-39">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Cacahuate/CacahuateSalado.webp" alt="">
+            <h3>Cacahuates salados</h3>
+            <p> Cacahuate con sal, 1Kg</p>
+            <span class="precio">$78.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-40">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Cacahuate/CacahuateToreado.webp" alt="">
+            <h3>Cacahuates Toreados</h3>
+            <p> Cacahuates cubiertos de chiles secos, 1Kg</p>
+            <span class="precio">$78.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-41">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Cacahuate/CacahuateChile.png" alt="">
+            <h3>Cacahuates con Chile</h3>
+            <p> 1Kg</p>
+            <span class="precio">$78.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-42">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Cacahuate/CacahuateJapones.webp" alt="">
+            <h3>Cacahuates Japones</h3>
+            <p> Cacahuates japoneses están cubiertos por una mezcla de harina de trigo, almidón de maíz, azúcar, sal, 1Kg</p>
+            <span class="precio">$78.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-43">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Cacahuate/CacahuateSurtido.jpeg" alt="">
+            <h3>Cacahuates Surtidos</h3>
+            <p> Botana que puede incluir cacahuates fritos, pepitas de calabaza, pasas, chile piquín, sal yodada, 1Kg</p>
+            <span class="precio">$78.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <!--Extra-->
+        <div class="preview" data-target="p-44">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Cacahuate/Garbanzos.jpg" alt="">
+            <h3>Garbanzo</h3>
+            <p>  1Kg</p>
+            <span class="precio">$78.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-45">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Cacahuate/Chicharos.jpg" alt="">
+            <h3>Chicharo</h3>
+            <p>  1Kg</p>
+            <span class="precio">$78.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-46">
+            <i class="fas fa-times close-preview"></i>
+            <img src="img/Botana/Cacahuate/Haba.jpg" alt="">
+            <h3>Haba</h3>
+            <p>  1Kg</p>
+            <span class="precio">$110.00</span>
+            <div class="botones">
+                 <!-- Nada-->
+                <a href="#" class="carro">Añadir al carro</a>
+            </div>
+        </div>
+    </div>                 
+    </div>
+
+    	 <!-- Footer -->
+	 <footer class="contenedor_footer">
+        <div class="logo">
+            <img src="img/logoE.png" alt="Logo dulceria">
+            <h2>Direccion: </h2>
+            <p>Sierra de San Bernardino # 214</p>
+            <p>Cumbres, 20175 Aguascalientes, Ags.</p>
+
+        </div>
+        <div class="derechos">
+            <p>Dulceria Garcia.</p>
+            <p>Todos los derechos reservados</p>
+
+        </div>
+        
+        <div class="redes2">
+            <a href="preguntas_frec.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" width="60" height="50" stroke-width="1.75"> <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path> <path d="M12 8v4"></path> <path d="M12 16h.01"></path> </svg> 
+            </a>   
+                <a href="mailto:guilleldelunasanchez@gmail.com" target="_blank" aria-label="Correo electrónico">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="60" height="50" stroke-width="2"> <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path> <path d="M3 7l9 6l9 -6"></path> </svg> 
+                </a>
+            
+
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/4491915358" target="_blank" aria-label="WhatsApp">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="60"
+                    height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path
+                        d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                </svg>
+            </a>
+
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/share/18j1ugXpBQaHa6aS/" target="_blank" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="50"
+                    height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>
+        </div>
+        <div class="redes">
+            <h2>Contactanos por:</h2>
+            <a href="https://wa.me/4491915358" target="_blank" aria-label="WhatsApp">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path
+                        d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                </svg>
+            </a>
+
+            <!-- Enlace de Facebook -->
+            <a href="https://www.facebook.com/share/18j1ugXpBQaHa6aS/" target="_blank" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        const cartButton = document.querySelector('.carrito a'); 
+        const cart = document.getElementById('carrito-compra'); 
+        const closeCart = document.getElementById('cerrar-carrito');
+    
+        cartButton.addEventListener('click', (e) => {
+            e.preventDefault(); 
+            cart.classList.toggle('mostrar'); 
+        });
+    
+        closeCart.addEventListener('click', () => {
+            cart.classList.remove('mostrar'); 
+        });
+    
+        window.addEventListener('click', (e) => {
+            if (!cart.contains(e.target) && !cartButton.contains(e.target)) {
+                cart.classList.remove('mostrar'); 
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>
