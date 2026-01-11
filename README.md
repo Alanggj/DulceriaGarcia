@@ -5,9 +5,18 @@
 
 ## Arquitectura
 La aplicación sigue una arquitectura **JAMstack (JavaScript, APIs, Markup)** simplificada:
-*   **Presentación (Markup)**: Archivos HTML5 estáticos que definen la estructura de cada página.
-*   **Estilos**: Hojas de estilo CSS organizadas para mantener un diseño visual coherente.
-*   **Comportamiento**: JavaScript del lado del cliente para interactividad y manipulación del DOM (carrito de compras, menús).
+```
+DulceriaGarcia/
+├── CSS/             # Hojas de estilo
+├── js/              # Scripts de Frontend
+├── img/             # Activos multimedia (productos)
+├── index.html       # Página Principal
+├── dulces.html      # Catálogo por categorías
+└── comprar.html     # Carrito de compras
+```
+*   **Presentación (Markup)**: Archivos HTML5 estáticos.
+*   **Estilos**: Hojas de estilo CSS organizadas.
+*   **Comportamiento**: JavaScript del lado del cliente.
 
 ## Tecnologías Utilizadas
 *   **HTML5**: Estructura semántica.
