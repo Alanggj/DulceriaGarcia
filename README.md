@@ -44,6 +44,3 @@ Al ser un sitio estático, no requiere un servidor de aplicaciones complejo:
 El "modelo de datos" es implícito y reside en la estructura del DOM o en objetos JSON dentro de los archivos JavaScript (para el carrito de compras):
 *   **Productos**: Representados visualmente en HTML con atributos como nombre, precio e imagen.
 *   **Carrito**: Probablemente gestionado en `localStorage` o memoria del navegador, almacenando IDs de productos y cantidades.
-
-## Autor
-**Alan Gael Gallardo Jimenez**
